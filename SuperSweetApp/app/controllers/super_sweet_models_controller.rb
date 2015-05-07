@@ -21,7 +21,7 @@ class SuperSweetModelsController < ApplicationController
     end
 
   def edit
-    supersweetmodel = SuperSweetModel.find(params[:id]) #nick
+    @supersweetmodel = SuperSweetModel.find(params[:id]) #nick
   end
   # def update
   #   supersweetmodel = SuperSweetModel.find(params[:id]) #nick
