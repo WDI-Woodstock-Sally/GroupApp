@@ -2,6 +2,8 @@ Rails.application.routes.draw do
 
   resources :super_sweet_models
 
+  root 'super_sweet_models#index'
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

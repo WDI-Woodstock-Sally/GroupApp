@@ -30,7 +30,7 @@ class SuperSweetModelsController < ApplicationController
     end
 
     private
-    
+
     def supersweetmodel_params
       params.require(:super_sweet_model).permit(:name, :ability)
     end
