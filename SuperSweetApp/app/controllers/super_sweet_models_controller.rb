@@ -1,10 +1,10 @@
 class SuperSweetModelsController < ApplicationController
   def index
-    #charlie
+    @superSweetModels = SuperSweetModel.all
   end
 
   def show
-    #charlie
+    @superSweetModel = SuperSweetModel.find(params[:id])
   end
 
   def new
@@ -22,6 +22,6 @@ class SuperSweetModelsController < ApplicationController
   end
 
   def destroy
-    #charlie
+    SuperSweetModel.destroy(params[:id])
   end
 end
