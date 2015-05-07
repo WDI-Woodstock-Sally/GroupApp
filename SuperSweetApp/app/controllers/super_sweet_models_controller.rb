@@ -15,12 +15,14 @@ class SuperSweetModelsController < ApplicationController
   end
 
   def edit
-    #nick
+    supersweetmodel = SuperSweetModel.find(params[:id]) #nick
   end
-  def update
-    #nick
-  end
-
+  # def update
+  #   supersweetmodel = SuperSweetModel.find(params[:id]) #nick
+  #   supersweetmodel.update(supersweetmodel_params)
+  #   redirect_to "/supersweetmodel/#{supersweetmodel.id}"
+  # end
+  
   def destroy
     #charlie
   end
