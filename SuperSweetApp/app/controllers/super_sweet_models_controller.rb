@@ -1,27 +1,29 @@
-class SuperSweetModelsController < ApplicationController
-  def index
-    #charlie
-  end
+  class SuperSweetModelsController < ApplicationController
+    def index
+      #charlie
+    end
 
-  def show
-    #charlie
-  end
+    def show
+      #charlie
+    end
 
-  def new
-    #dakoda
-  end
-  def create
-    #dakoda
-  end
+    def new
+      @supersweetmodel = SuperSweetModel.new
+    end
 
-  def edit
-    #nick
-  end
-  def update
-    #nick
-  end
+    def create
+      @supersweetmodel = SuperSweetModel.create(supersweetmodel_params)
+      redirect_to '/supersweetmodels/#{supersweetmodels.id}'
+    end
 
-  def destroy
-    #charlie
+    def edit
+      #nick
+    end
+    def update
+      #nick
+    end
+
+    def destroy
+      #charlie
+    end
   end
-end
