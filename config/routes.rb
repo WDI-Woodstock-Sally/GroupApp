@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   post 'log_in' => 'sessions#log_in'
   delete 'log_out' => 'sessions#log_out'
 
+  get '/' => 'users#home'
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
