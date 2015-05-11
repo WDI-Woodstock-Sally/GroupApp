@@ -2,12 +2,13 @@
 <head>
   <script src="https://cdn.firebase.com/js/client/2.2.1/firebase.js"></script>
   <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js'></script>
-
+  <link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
 <!-- CHAT MARKUP -->
-<div class="example-chat l-demo-container">
+<div class="chat-demo-container">
   <header>Firebase Chat Demo</header>
 
   <div class='example-chat-toolbar'>
@@ -49,12 +50,12 @@
   messagesRef.limitToLast(10).on('child_added', function (snapshot) {
     //GET DATA
     var data = snapshot.val();
-    var username = data.username || "anonymous";
+    var username = data.username || "anonymous:";
     var message = data.message;
 
     //CREATE ELEMENTS MESSAGE & SANITIZE TEXT
-    var messageElement = $("<li>");
-    var nameElement = $("<strong class='example-chat-username'></strong>")
+    var messageElement = $("<li class='chat-message'>");
+    var nameElement = $("<strong class='example-chat-username'>:</strong>")
     nameElement.text(username);
     messageElement.text(message).prepend(nameElement);
 
