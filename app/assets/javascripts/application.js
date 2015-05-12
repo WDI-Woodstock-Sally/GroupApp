@@ -44,7 +44,7 @@ $(document).ready(function(evt){
   })
 
   $('.question-li').click(function(){
-    $('answer-selected').removeClass('answer-selected')
+    $('.answer-selected').removeClass('answer-selected')
     $(this).addClass('answer-selected');
   })
 
