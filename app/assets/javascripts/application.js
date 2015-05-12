@@ -83,6 +83,19 @@ $(document).ready(function(evt){
     var right = data.right;
     var wrongs = data.wrong;
 
+    var questionElement = $('#question-h2');
+    var answerElements = $('.question-li');
+
+    questionElement.text(prompt)
+    var rand = Math.floor((Math.random() * 4));
+    active.correct = rand;
+    for(var i = 0; i < 4; i++){
+      if(i != rand){  answerElements[i].textContent  = wrongs.pop()   }
+      else { answerElements[i].textContent = right }
+
+    }
+
+
   })
 
   // Add a callback that is triggered for each chat message.
