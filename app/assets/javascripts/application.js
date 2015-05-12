@@ -24,10 +24,22 @@ $(document).ready(function(evt){
   // CREATE A REFERENCE TO FIREBASE
   active.messagesRef = new Firebase('https://triviabase.firebaseio.com/messages');
   active.questionRef = new Firebase('https://triviabase.firebaseio.com/questions')
+  active.activeQuestionRef = new Firebase('https://triviabase.firebaseio.com/activequestion')
 
   $('#new-question').click(function(){
-    var questions = getQuestions(function(data){
-      for (var key in data) { console.log(data[key].prompt) }
+    var questions = getQuestions(function(data, numChildren){
+      var rand = Math.floor((Math.random() * numChildren) + 1);
+      var counter = 1;
+      console.log(rand);
+      for (var key in data){
+        if(counter == rand){
+          active.activeQuestionRef.remove()
+          active.activeQuestionRef.push(data[key]);
+          console.log(data[key])
+        }
+        counter++
+
+      }
     });
 
     //var question = Math.floor(Math.random(questions))
@@ -36,10 +48,11 @@ $(document).ready(function(evt){
 
   var getQuestions = function(callback){
     active.questionRef.on("value", function(snapshot) {
+      numChildren = snapshot.numChildren();
       var data = snapshot.val();
-      console.log(data);
+      //console.log(data);
 
-      callback(data);
+      callback(data, numChildren);
     }, function (errorObject) {
       console.log("The read failed: " + errorObject.code);
     });
@@ -63,6 +76,14 @@ $(document).ready(function(evt){
       messageField.val('');
     }
   });
+
+  active.activeQuestionRef.on('child_added', function(snapshot){
+    var data = snapshot.val();
+    var prompt = data.prompt;
+    var right = data.right;
+    var wrongs = data.wrong;
+
+  })
 
   // Add a callback that is triggered for each chat message.
   active.messagesRef.limitToLast(10).on('child_added', function (snapshot) {
