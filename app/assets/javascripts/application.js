@@ -41,9 +41,11 @@ $(document).ready(function(evt){
 
       }
     });
+  })
 
-    //var question = Math.floor(Math.random(questions))
-    //console.log(questions)
+  $('.question-li').click(function(){
+    $('answer-selected').removeClass('answer-selected')
+    $(this).addClass('answer-selected');
   })
 
   var getQuestions = function(callback){
