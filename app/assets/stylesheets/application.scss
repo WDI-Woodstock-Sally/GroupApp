@@ -2,12 +2,13 @@ body{
   background-color: slategrey;
 }
 #wrapper{
+  border:2px green dashed;
   height:800px;
-  width:1280px;
+  width:100%;
 }
 .left-nav{
-  border:2px white dashed;
-  width:300px;
+  // border:2px white dashed;
+  width:15%;
   height:100%;
   float: left;
 }
@@ -20,16 +21,18 @@ body{
   text-align: center;
 }
 #question-container{
-  width:708px;
-  border:2px white dashed;
+  width:54%;
+  // border:2px white dashed;
   position:relative;
   float:left;
 }
 .question-li{
   list-style-type: none;
-  border:2px black solid;
-  margin-top:10px;
+  border: 2px black solid;
+  margin-top: 10px;
   padding: 2px;
+  width: 90%;
+
 }
 
 
@@ -45,6 +48,7 @@ header{
   overflow:scroll;
   position: relative;
   align-content: center;
+  height:60%;
 }
 #messageInput{
   width:100%;
@@ -54,11 +58,11 @@ header{
 }
 .chat-demo-container{
   position: relative;
-  height: 600px;
-  width: 20%;
+  height: 100%;
+  width: 25%;
   margin: 2px;
   float: right;
-  border: 2px white dashed;
+  // border: 2px white dashed;
 }
 .chat-message{
   font-family: 'Oswald', sans-serif;
