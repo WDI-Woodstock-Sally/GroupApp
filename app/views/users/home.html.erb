@@ -6,23 +6,38 @@
   <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 </head>
 <body>
+  <div id="wrapper">
 
-<!-- CHAT MARKUP -->
-<div class="chat-demo-container">
-  <header>Firebase Chat Demo</header>
 
-  <div class='example-chat-toolbar'>
-    <label for="nameInput">Username:</label>
-    <input type='text' id='nameInput' placeholder='enter a username...'>
-  </div>
+    <!-- QUESTION FIELD -->
+    <div id="question-container">
 
-  <ul id='example-messages' class="example-chat-messages"></ul>
+      <div id="question">
+        <ul>
 
-  <footer>
-    <input type='text' id='messageInput'  placeholder='Type a message...'>
-  </footer>
+        </ul>
+        <ul id="multi-choice">
+          <li class="mulit"></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- CHAT MARKUP -->
+    <div class="chat-demo-container">
+      <header>TriviaBase Chat</header>
+
+      <div class='example-chat-toolbar'>
+        <label for="nameInput">Username:</label>
+        <input type='text' id='nameInput' placeholder='enter a  username...'>
+      </div>
+
+      <ul id='example-messages' class="example-chat-messages"></ul>
+
+      <div id ="chat-input">
+        <input type='text' id='messageInput'  placeholder='Type a   message...'>
+      </div>
+    </div>
 </div>
-
 <!-- CHAT JAVACRIPT -->
 <script>
   // CREATE A REFERENCE TO FIREBASE

@@ -1,31 +1,58 @@
 body{
   background-color: slategrey;
 }
+
 header{
   font-family: 'Pacifico', cursive;
   font-size:30px;
+  text-align:center;
+}
+
+#wrapper{
+  height:800px;
+  width:1280px;
+}
+
+#question-container{
+  height:100px;
+  width:300px;
+  border:2px white solid;
+  postion:relative;
+  float:left;
 }
 
 #example-messages{
   border:2px black solid;
-  height:200px;
-  width:60%;
   overflow:scroll;
   position: relative;
   align-content: center;
-
 }
-.chat-demo-container{
-  height:600px;
+
+#messageInput{
   width:100%;
-  margin: 0px auto;
+}
+
+#chat-input{
+  width: 100%;
+}
+
+.chat-demo-container{
+  position: relative;
+  height: 600px;
+  width: 20%;
+  margin: 2px;
+  float: right;
+  border: 2px white solid;
 }
 
 .chat-message{
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
 }
-
+.example-chat-toolbar{
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+}
 .example-chat-username{
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
