@@ -1,50 +1,64 @@
 body{
   background-color: slategrey;
 }
+#wrapper{
+  height:800px;
+  width:1280px;
+}
+.left-nav{
+  border:2px white dashed;
+  width:300px;
+  height:100%;
+  float: left;
+}
+/*-_-_-_-_-_-_-_- QUESTION FIELD -_-_-_-_-_-_-_-*/
+#question-h2{
+  padding: 2px;
+  margin-right:2px;
+  border:2px black solid;
+  text-align: center;
+}
+#question-container{
+  width:708px;
+  border:2px white dashed;
+  position:relative;
+  float:left;
+}
+.question-li{
+  list-style-type: none;
+  border:2px black solid;
+  margin-top:10px;
+  padding: 2px;
+}
+
+
+/*-_-_-_-_-_-_-_- CHAT MARKUP -_-_-_-_-_-_-_-*/
 
 header{
   font-family: 'Pacifico', cursive;
   font-size:30px;
   text-align:center;
 }
-
-#wrapper{
-  height:800px;
-  width:1280px;
-}
-
-#question-container{
-  height:100px;
-  width:300px;
-  border:2px white solid;
-  postion:relative;
-  float:left;
-}
-
 #example-messages{
   border:2px black solid;
   overflow:scroll;
   position: relative;
   align-content: center;
 }
-
 #messageInput{
   width:100%;
 }
-
 #chat-input{
   width: 100%;
 }
-
 .chat-demo-container{
   position: relative;
   height: 600px;
   width: 20%;
   margin: 2px;
   float: right;
-  border: 2px white solid;
+  border: 2px white dashed;
 }
-
 .chat-message{
   font-family: 'Oswald', sans-serif;
   font-weight: 400;

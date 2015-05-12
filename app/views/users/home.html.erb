@@ -6,31 +6,38 @@
   <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 </head>
 <body>
+  <div id="wrapper">
+    <div class="left-nav"></div>
+    <!-- QUESTION FIELD -->
+    <div id="question-container">
+      <h2 id='question-h2'>Why is a Raven like a writing desk?</h2>
+      <ul>
+        <li class='question-li'>one</li>
+        <li class='question-li'>two</li>
+        <li class='question-li'>three</li>
+        <li class='question-li'>four</li>
+      </ul>
+      <button type="button" value="new question" id="new-question">New Question</button>
+    </div>
+    <!-- QUESTION FIELD -->
 
-<!-- CHAT MARKUP -->
-<div class="chat-demo-container">
-  <header>Firebase Chat Demo</header>
+    <!-- CHAT MARKUP -->
+    <div class="chat-demo-container">
+      <header>TriviaBase Chat</header>
 
-  <div class='example-chat-toolbar'>
-    <label for="nameInput">Username:</label>
-    <input type='text' id='nameInput' placeholder='enter a username...'>
+      <div class='example-chat-toolbar'>
+        <label for="nameInput">Username:</label>
+        <input type='text' id='nameInput' placeholder='enter a username...'>
+      </div>
+
+      <ul id='example-messages' class="example-chat-messages"></ul>
+
+      <div id ="chat-input">
+        <input type='text' id='messageInput'  placeholder='Type a   message...'>
+      </div>
+
+    </div>
+    <!-- CHAT MARKUP -->
   </div>
-
-  <ul id='example-messages' class="example-chat-messages"></ul>
-
-  <footer>
-    <input type='text' id='messageInput'  placeholder='Type a message...'>
-  </footer>
-</div>
-
-<button type="button" value="new question" id = "new-question"></button>
-<ul>
-  <h2 id = 'question-h2'>stuff</h2>
-  <li class = 'question-li'>one</li>
-  <li class = 'question-li'>two</li>
-  <li class = 'question-li'>three</li>
-  <li class = 'question-li'>four</li>
-</ul>
-
 </body>
 </html>
