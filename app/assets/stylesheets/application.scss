@@ -1,38 +1,52 @@
 body{
-  background-color: slategrey;
+background-image: url("https://meganstorrs2014.files.wordpress.com/2014/01/broken-glass.jpg");
+background-size:95%;
 }
+
 #wrapper{
   border:2px green dashed;
   height:800px;
   width:100%;
 }
+/*-_-_-_-_-_-_-_- LEFT COLUM -_-_-_-_-_-_-_-*/
+h1{
+  font-family: 'Pacifico', cursive;
+  font-weight:300;
+  font-size:30px;
+  text-align:center;
+}
 .left-nav{
   // border:2px white dashed;
-  width:15%;
+  width:20%;
   height:100%;
   float: left;
 }
 /*-_-_-_-_-_-_-_- QUESTION FIELD -_-_-_-_-_-_-_-*/
 
 #question-h2{
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
   padding: 2px;
   margin-right:2px;
   border:2px black solid;
   text-align: center;
+  border-radius: 45px;
 }
 #question-container{
-  width:54%;
+  width:50%;
   // border:2px white dashed;
   position:relative;
   float:left;
 }
 .question-li{
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
   list-style-type: none;
   border: 2px black solid;
   margin-top: 10px;
-  padding: 2px;
+  padding: 5px;
   width: 90%;
-
+  border-radius: 45px;
 }
 
 
@@ -40,15 +54,17 @@ body{
 
 header{
   font-family: 'Pacifico', cursive;
-  font-size:30px;
+  font-size:25px;
   text-align:center;
 }
-#example-messages{
-  border:2px black solid;
-  overflow:scroll;
+#example-messages {
+  border-radius: 20px;
+  border: 2px black solid;
+  overflow: scroll;
   position: relative;
   align-content: center;
-  height:60%;
+  height: auto;
+  padding: 5px 15px;
 }
 #messageInput{
   width:100%;
@@ -57,14 +73,18 @@ header{
   width: 100%;
 }
 .chat-demo-container{
+  padding:10px;
+  background-color: rgba(122, 186, 67, 0.69);
   position: relative;
   height: 100%;
   width: 25%;
   margin: 2px;
   float: right;
+  border-radius: 45px;
   // border: 2px white dashed;
 }
 .chat-message{
+  list-style-type: none;
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
 }
@@ -76,6 +96,18 @@ header{
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*
