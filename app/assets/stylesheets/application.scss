@@ -5,9 +5,10 @@ background-size:95%;
 
 #wrapper{
   border:2px green dashed;
-  height:800px;
+  height:700px;
   width:100%;
 }
+
 /*-_-_-_-_-_-_-_- LEFT COLUM -_-_-_-_-_-_-_-*/
 h1{
   font-family: 'Pacifico', cursive;
@@ -16,6 +17,8 @@ h1{
   text-align:center;
 }
 .left-nav{
+  background-color: rgba(122, 186, 67, 0.69);
+  border-radius: 45px;
   // border:2px white dashed;
   width:20%;
   height:100%;
@@ -24,31 +27,38 @@ h1{
 /*-_-_-_-_-_-_-_- QUESTION FIELD -_-_-_-_-_-_-_-*/
 
 #question-h2{
+  background-color: rgb(193, 227, 211);
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
+  font-size: 30px;
   padding: 2px;
   margin-right:2px;
-  border:2px black solid;
+  border: 2px rgba(107, 144, 88, 0.17) solid;
   text-align: center;
   border-radius: 45px;
 }
-#question-container{
-  width:50%;
-  // border:2px white dashed;
-  position:relative;
-  float:left;
+#question-container {
+  padding: 50px;
+  width: 45%;
+  position: relative;
+  float: left;
 }
 .question-li{
+  background-color: rgba(193, 227, 211, 0.41);
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
+  font-size: 22px;
   list-style-type: none;
-  border: 2px black solid;
+  border: 2px rgba(107, 144, 88, 0.17) solid;
   margin-top: 10px;
   padding: 5px;
   width: 90%;
   border-radius: 45px;
 }
 
+.answer-selected{
+  background-color:green;
+}
 
 /*-_-_-_-_-_-_-_- CHAT MARKUP -_-_-_-_-_-_-_-*/
 
@@ -57,6 +67,7 @@ header{
   font-size:25px;
   text-align:center;
 }
+
 #example-messages {
   border-radius: 20px;
   border: 2px black solid;
@@ -66,12 +77,15 @@ header{
   height: auto;
   padding: 5px 15px;
 }
+
 #messageInput{
   width:100%;
 }
+
 #chat-input{
   width: 100%;
 }
+
 .chat-demo-container{
   padding:10px;
   background-color: rgba(122, 186, 67, 0.69);
@@ -83,22 +97,25 @@ header{
   border-radius: 45px;
   // border: 2px white dashed;
 }
+
 .chat-message{
   list-style-type: none;
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
 }
+
 .example-chat-toolbar{
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
 }
+
 .example-chat-username{
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
 }
 
 
-
+/*-_-_-_-_-_-_-_- END -_-_-_-_-_-_-_-*/
 
 
 
