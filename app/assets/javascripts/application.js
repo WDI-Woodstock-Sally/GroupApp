@@ -14,21 +14,32 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+var app = app || {};
+var active = active || {};
+
+
 $(document).ready(function(evt){
 
   // CREATE A REFERENCE TO FIREBASE
-  var messagesRef = new Firebase('https://triviabase.firebaseio.com/messages');
-  var questionRef = new Firebase('https://triviabase.firebaseio.com/questions')
+  active.messagesRef = new Firebase('https://triviabase.firebaseio.com/messages');
+  active.questionRef = new Firebase('https://triviabase.firebaseio.com/questions')
 
   $('#new-question').click(function(){
-    var questions = getQuestions();
-    var question = Math.floor(Math.random(questions))
-    console.log(questions)
+    var questions = getQuestions(function(data){
+      for (var key in data) { console.log(data[key].prompt) }
+    });
+
+    //var question = Math.floor(Math.random(questions))
+    //console.log(questions)
   })
 
-  var getQuestions = function(){
-    questionRef.on("value", function(snapshot) {
-      console.log(snapshot.val());
+  var getQuestions = function(callback){
+    active.questionRef.on("value", function(snapshot) {
+      var data = snapshot.val();
+      console.log(data);
+
+      callback(data);
     }, function (errorObject) {
       console.log("The read failed: " + errorObject.code);
     });
@@ -48,13 +59,13 @@ $(document).ready(function(evt){
       var message = messageField.val();
 
       //SAVE DATA TO FIREBASE AND EMPTY FIELD
-      messagesRef.push({username:username, message:message});
+      active.messagesRef.push({username:username, message:message});
       messageField.val('');
     }
   });
 
   // Add a callback that is triggered for each chat message.
-  messagesRef.limitToLast(10).on('child_added', function (snapshot) {
+  active.messagesRef.limitToLast(10).on('child_added', function (snapshot) {
     //GET DATA
     var data = snapshot.val();
     var username = data.username || "anonymous";
