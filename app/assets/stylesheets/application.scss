@@ -8,6 +8,7 @@ background-size:95%;
   height:800px;
   width:100%;
 }
+
 /*-_-_-_-_-_-_-_- LEFT COLUM -_-_-_-_-_-_-_-*/
 h1{
   font-family: 'Pacifico', cursive;
@@ -16,6 +17,8 @@ h1{
   text-align:center;
 }
 .left-nav{
+  background-color: rgba(122, 186, 67, 0.69);
+  border-radius: 45px;
   // border:2px white dashed;
   width:20%;
   height:100%;
@@ -32,11 +35,11 @@ h1{
   text-align: center;
   border-radius: 45px;
 }
-#question-container{
-  width:50%;
-  // border:2px white dashed;
-  position:relative;
-  float:left;
+#question-container {
+  padding: 50px;
+  width: 45%;
+  position: relative;
+  float: left;
 }
 .question-li{
   font-family: 'Oswald', sans-serif;
@@ -57,6 +60,7 @@ header{
   font-size:25px;
   text-align:center;
 }
+
 #example-messages {
   border-radius: 20px;
   border: 2px black solid;
