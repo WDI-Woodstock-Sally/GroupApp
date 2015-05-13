@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
   def home
-    
+    authenticate!
+    @user = current_user
   end
 
   def index

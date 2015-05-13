@@ -15,6 +15,8 @@
 //= require turbolinks
 //= require_tree .
 
+
+
 var app = app || {};
 var active = active || {};
 
@@ -23,8 +25,26 @@ $(document).ready(function(evt){
 
   // CREATE A REFERENCE TO FIREBASE
   active.messagesRef = new Firebase('https://triviabase.firebaseio.com/messages');
-  active.questionRef = new Firebase('https://triviabase.firebaseio.com/questions')
-  active.activeQuestionRef = new Firebase('https://triviabase.firebaseio.com/activequestion')
+  active.questionRef = new Firebase('https://triviabase.firebaseio.com/questions');
+  active.activeQuestionRef = new Firebase('https://triviabase.firebaseio.com/activequestion');
+
+
+  active.newQuestion = function(){
+    var questions = getQuestions(function(data, numChildren){
+      var rand = Math.floor((Math.random() * numChildren) + 1);
+      var counter = 1;
+      console.log(rand);
+      for (var key in data){
+        if(counter == rand){
+          active.activeQuestionRef.remove()
+          active.activeQuestionRef.push(data[key]);
+          console.log(data[key])
+        }
+        counter++
+
+      }
+    });
+  }
 
   $('#new-question').click(function(){
     var questions = getQuestions(function(data, numChildren){
@@ -52,7 +72,6 @@ $(document).ready(function(evt){
     active.questionRef.on("value", function(snapshot) {
       numChildren = snapshot.numChildren();
       var data = snapshot.val();
-      //console.log(data);
 
       callback(data, numChildren);
     }, function (errorObject) {
@@ -80,6 +99,7 @@ $(document).ready(function(evt){
   });
 
   active.activeQuestionRef.on('child_added', function(snapshot){
+
     var data = snapshot.val();
     var prompt = data.prompt;
     var right = data.right;
@@ -96,6 +116,8 @@ $(document).ready(function(evt){
       else { answerElements[i].textContent = right }
 
     }
+
+
 
 
   })
@@ -120,5 +142,15 @@ $(document).ready(function(evt){
     //SCROLL TO BOTTOM OF MESSAGE LIST
     messageList[0].scrollTop = messageList[0].scrollHeight;
   });
+
+
+    /*setInterval(function(){
+      var timer = 20;
+      setInterval(function(){
+        timer -= 1 ;
+        console.log(timer)
+      }, 1000)
+      active.newQuestion();
+    }, 20000);*/
 
 })
