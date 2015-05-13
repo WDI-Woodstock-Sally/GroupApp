@@ -1,19 +1,4 @@
-/*
-  * This is a manifest file that'll be compiled into application.css, which will include  all the files
-  * listed below.
-  *
-  * Any CSS and SCSS file within this directory, lib/assets/stylesheets,  vendor/assets/stylesheets,
-  * or any plugin's vendor/assets/stylesheets directory can be referenced here using a  relative path.
-  *
-  * You're free to add application-wide styles to this file and they'll appear at the   bottom of the
-  * compiled file so the styles you add here take precedence over styles defined in any   styles
-  * defined in the other CSS/SCSS files in this directory. It is generally better to  create a new
-  * file per style scope.
-  *
-  *= require_tree .
-  *= require_self
-  */
-  
+
 /*-_-_-_-_-_-_-_- PAGE -_-_-_-_-_-_-_-*/
 body{
   background-image: url("https://meganstorrs2014.files.wordpress.com/2014/01/broken-glass.jpg");
@@ -56,6 +41,7 @@ h1{
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 30px;
+  padding:0px auto;
 }
 #timer{
   border: 2px rgba(107, 144, 88, 0.17) solid;
@@ -65,8 +51,7 @@ h1{
   margin: 0px auto;
   padding: 0px;
   line-height: 0;
-  display:;
-
+  display:inline;
 }
 .question-li{
   background-color: rgba(193, 227, 211, 0.41);
@@ -161,3 +146,18 @@ header {
 }
 /*-_-_-_-_-_-_-_- END -_-_-_-_-_-_-_-*/
 // random default junk below
+/*
+  * This is a manifest file that'll be compiled into application.css, which will include  all the files
+  * listed below.
+  *
+  * Any CSS and SCSS file within this directory, lib/assets/stylesheets,  vendor/assets/stylesheets,
+  * or any plugin's vendor/assets/stylesheets directory can be referenced here using a  relative path.
+  *
+  * You're free to add application-wide styles to this file and they'll appear at the   bottom of the
+  * compiled file so the styles you add here take precedence over styles defined in any   styles
+  * defined in the other CSS/SCSS files in this directory. It is generally better to  create a new
+  * file per style scope.
+  *
+  *= require_tree .
+  *= require_self
+  */
