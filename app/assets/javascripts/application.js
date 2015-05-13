@@ -61,6 +61,7 @@ $(document).ready(function(evt){
     var numQuestions = parseInt($("#start-questions").val());
     var seconds = parseInt($("#start-time").val());
     var timer = seconds;
+    $('.answer-selected').removeClass('answer-selected');
     active.newQuestion();
     setIntervalX(function(){
       timer --;
@@ -76,13 +77,13 @@ $(document).ready(function(evt){
         $("#timer").text(timer.toString());
 
       }, 1000, seconds);
-
+      $('.answer-selected').removeClass('answer-selected');
       active.newQuestion();
     }, seconds * 1000, numQuestions);
   })
 
   $('.question-li').click(function(){
-    $('.answer-selected').removeClass('answer-selected')
+    $('.answer-selected').removeClass('answer-selected');
     $(this).addClass('answer-selected');
   })
 
