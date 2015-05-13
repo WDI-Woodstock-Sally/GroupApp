@@ -1,17 +1,14 @@
 /*-_-_-_-_-_-_-_- PAGE -_-_-_-_-_-_-_-*/
-
 body{
   background-image: url("https://meganstorrs2014.files.wordpress.com/2014/01/broken-glass.jpg");
   background-size:cover;
 }
 #wrapper{
-  // border:2px green dashed;
+  border:2px green dashed;
   height:700px;
   width:100%;
 }
-
 /*-_-_-_-_-_-_-_- LEFT COLUM -_-_-_-_-_-_-_-*/
-
 h1{
   font-family: 'Pacifico', cursive;
   font-weight:300;
@@ -32,10 +29,9 @@ h1{
   box-shadow: 0px 7px 161px 60px rgba(0,0,0,0.44);
 }
 /*-_-_-_-_-_-_-_- QUESTION FIELD -_-_-_-_-_-_-_-*/
-
-// ----- Questions Container -----
+//         ----- Questions Container -----
 #question-container {
-  padding: 50px;
+  padding: 0% 4% 0%;
   width: 49%;
   position: relative;
   float: left;
@@ -45,8 +41,6 @@ h1{
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 30px;
-  padding: 2px;
-  margin-right:2px;
   border: 2px rgba(107, 144, 88, 0.17) solid;
   text-align: center;
   border-radius: 15px;
@@ -73,7 +67,6 @@ h1{
   background-color:green;
 }
 /*-_-_-_-_-_-_-_- CHAT MARKUP -_-_-_-_-_-_-_-*/
-
 header {
   line-height: 30px;
   font-family: 'Pacifico', cursive;
@@ -105,7 +98,7 @@ header {
 #nameInput {
   border-radius: 6px;
 }
-//   ----------Chat Container---------
+//           ---- Chat Container ----
 .chat-demo-container {
   padding: 0px 10px 0px;
   background-color: rgba(122, 186, 67, 0.69);
@@ -134,8 +127,8 @@ header {
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
 }
-
 /*-_-_-_-_-_-_-_- END -_-_-_-_-_-_-_-*/
+// random default junk below
 /*
   * This is a manifest file that'll be compiled into application.css, which will include  all the files
   * listed below.
