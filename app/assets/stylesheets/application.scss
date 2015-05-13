@@ -1,3 +1,19 @@
+/*
+  * This is a manifest file that'll be compiled into application.css, which will include  all the files
+  * listed below.
+  *
+  * Any CSS and SCSS file within this directory, lib/assets/stylesheets,  vendor/assets/stylesheets,
+  * or any plugin's vendor/assets/stylesheets directory can be referenced here using a  relative path.
+  *
+  * You're free to add application-wide styles to this file and they'll appear at the   bottom of the
+  * compiled file so the styles you add here take precedence over styles defined in any   styles
+  * defined in the other CSS/SCSS files in this directory. It is generally better to  create a new
+  * file per style scope.
+  *
+  *= require_tree .
+  *= require_self
+  */
+
 
 /*-_-_-_-_-_-_-_- PAGE -_-_-_-_-_-_-_-*/
 body{
@@ -51,7 +67,12 @@ h1{
   margin: 0px auto;
   padding: 0px;
   line-height: 0;
+<<<<<<< HEAD
   display:inline;
+=======
+  display: inline;
+
+>>>>>>> 5460cd663c31a30000a8f56defeb7979e01023c8
 }
 .question-li{
   background-color: rgba(193, 227, 211, 0.41);
@@ -69,7 +90,13 @@ h1{
   box-shadow: 0px 7px 161px 0px rgba(0,0,0,0.44);
 }
 .answer-selected{
+  background-color:lightblue;
+}
+.answer-right{
   background-color:green;
+}
+.answer-wrong{
+  background-color:red;
 }
 .Qdiv{
   background-color: rgb(193, 227, 211);
