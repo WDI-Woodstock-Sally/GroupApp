@@ -15,11 +15,20 @@
 //= require turbolinks
 //= require_tree .
 
-
-
 var app = app || {};
 var active = active || {};
 
+function setIntervalX(callback, delay, repetitions) {
+    var x = 0;
+    var intervalID = window.setInterval(function () {
+
+       callback();
+
+       if (++x === repetitions) {
+           window.clearInterval(intervalID);
+       }
+    }, delay);
+}
 
 $(document).ready(function(evt){
 
@@ -46,21 +55,26 @@ $(document).ready(function(evt){
     });
   }
 
-  $('#new-question').click(function(){
-    var questions = getQuestions(function(data, numChildren){
-      var rand = Math.floor((Math.random() * numChildren) + 1);
-      var counter = 1;
-      console.log(rand);
-      for (var key in data){
-        if(counter == rand){
-          active.activeQuestionRef.remove()
-          active.activeQuestionRef.push(data[key]);
-          console.log(data[key])
-        }
-        counter++
+  $('#start-trivia').click(function(){
+    var timer = 10;
+    active.newQuestion();
+    setIntervalX(function(){
+      timer --;
+      //console.log(timer);
+      $("#timer").text(timer.toString());
 
-      }
-    });
+    }, 1000, 10);
+    setIntervalX(function(){
+      timer = 10;
+      setIntervalX(function(){
+        timer --;
+        //console.log(timer);
+        $("#timer").text(timer.toString());
+
+      }, 1000, 10);
+
+      active.newQuestion();
+    }, 10000, 10);
   })
 
   $('.question-li').click(function(){
@@ -144,13 +158,6 @@ $(document).ready(function(evt){
   });
 
 
-    /*setInterval(function(){
-      var timer = 20;
-      setInterval(function(){
-        timer -= 1 ;
-        console.log(timer)
-      }, 1000)
-      active.newQuestion();
-    }, 20000);*/
+
 
 })
