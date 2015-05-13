@@ -18,6 +18,8 @@
 var app = app || {};
 var active = active || {};
 
+//function checkAnswer()
+
 function setIntervalX(callback, delay, repetitions) {
     var x = 0;
     var intervalID = window.setInterval(function () {
@@ -31,6 +33,10 @@ function setIntervalX(callback, delay, repetitions) {
 }
 
 $(document).ready(function(evt){
+
+  $( '.menu-btn' ).click(function(){
+    $('.responsive-menu').toggleClass('expand');
+  })
 
   // CREATE A REFERENCE TO FIREBASE
   active.messagesRef = new Firebase('https://triviabase.firebaseio.com/messages');
@@ -56,29 +62,32 @@ $(document).ready(function(evt){
   }
 
   $('#start-trivia').click(function(){
-    var timer = 10;
+    var numQuestions = parseInt($("#start-questions").val());
+    var seconds = parseInt($("#start-time").val());
+    var timer = seconds;
+    $('.answer-selected').removeClass('answer-selected');
     active.newQuestion();
     setIntervalX(function(){
       timer --;
       //console.log(timer);
       $("#timer").text(timer.toString());
 
-    }, 1000, 10);
+    }, 1000, seconds);
     setIntervalX(function(){
-      timer = 10;
+      timer = seconds;
       setIntervalX(function(){
         timer --;
         //console.log(timer);
         $("#timer").text(timer.toString());
 
-      }, 1000, 10);
-
+      }, 1000, seconds);
+      $('.answer-selected').removeClass('answer-selected');
       active.newQuestion();
-    }, 10000, 10);
+    }, seconds * 1000, numQuestions);
   })
 
   $('.question-li').click(function(){
-    $('.answer-selected').removeClass('answer-selected')
+    $('.answer-selected').removeClass('answer-selected');
     $(this).addClass('answer-selected');
   })
 
