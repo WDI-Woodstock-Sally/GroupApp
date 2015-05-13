@@ -34,6 +34,10 @@ function setIntervalX(callback, delay, repetitions) {
 
 $(document).ready(function(evt){
 
+  $( '.menu-btn' ).click(function(){
+    $('.responsive-menu').toggleClass('expand');
+  })
+
   // CREATE A REFERENCE TO FIREBASE
   active.messagesRef = new Firebase('https://triviabase.firebaseio.com/messages');
   active.questionRef = new Firebase('https://triviabase.firebaseio.com/questions');

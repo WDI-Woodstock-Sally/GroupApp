@@ -1,3 +1,19 @@
+/*
+  * This is a manifest file that'll be compiled into application.css, which will include  all the files
+  * listed below.
+  *
+  * Any CSS and SCSS file within this directory, lib/assets/stylesheets,  vendor/assets/stylesheets,
+  * or any plugin's vendor/assets/stylesheets directory can be referenced here using a  relative path.
+  *
+  * You're free to add application-wide styles to this file and they'll appear at the   bottom of the
+  * compiled file so the styles you add here take precedence over styles defined in any   styles
+  * defined in the other CSS/SCSS files in this directory. It is generally better to  create a new
+  * file per style scope.
+  *
+  *= require_tree .
+  *= require_self
+  */
+
 /*-_-_-_-_-_-_-_- PAGE -_-_-_-_-_-_-_-*/
 body{
   background-image: url("https://meganstorrs2014.files.wordpress.com/2014/01/broken-glass.jpg");
@@ -37,16 +53,20 @@ h1{
   float: left;
 }
 #question-h2{
-  background-color: rgb(193, 227, 211);
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 30px;
+}
+#timer{
   border: 2px rgba(107, 144, 88, 0.17) solid;
-  text-align: center;
   border-radius: 15px;
-  -webkit-box-shadow: 0px 7px 161px 20px rgba(0,0,0,0.44);
-  -moz-box-shadow: 0px 7px 161px 20px rgba(0,0,0,0.44);
-  box-shadow: 0px 7px 161px 20px rgba(0,0,0,0.44);
+  text-align: right;
+  font-size: 22px;
+  margin: 0px auto;
+  padding: 0px;
+  line-height: 0;
+  display: inline;
+
 }
 .question-li{
   background-color: rgba(193, 227, 211, 0.41);
@@ -71,6 +91,18 @@ h1{
 }
 .answer-wrong{
   background-color:red;
+}
+.Qdiv{
+  background-color: rgb(193, 227, 211);
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  border: 2px rgba(107, 144, 88, 0.17) solid;
+  text-align: center;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 7px 161px 20px rgba(0,0,0,0.44);
+  -moz-box-shadow: 0px 7px 161px 20px rgba(0,0,0,0.44);
+  box-shadow: 0px 7px 161px 20px rgba(0,0,0,0.44);
 }
 /*-_-_-_-_-_-_-_- CHAT MARKUP -_-_-_-_-_-_-_-*/
 header {
@@ -135,18 +167,3 @@ header {
 }
 /*-_-_-_-_-_-_-_- END -_-_-_-_-_-_-_-*/
 // random default junk below
-/*
-  * This is a manifest file that'll be compiled into application.css, which will include  all the files
-  * listed below.
-  *
-  * Any CSS and SCSS file within this directory, lib/assets/stylesheets,  vendor/assets/stylesheets,
-  * or any plugin's vendor/assets/stylesheets directory can be referenced here using a  relative path.
-  *
-  * You're free to add application-wide styles to this file and they'll appear at the   bottom of the
-  * compiled file so the styles you add here take precedence over styles defined in any   styles
-  * defined in the other CSS/SCSS files in this directory. It is generally better to  create a new
-  * file per style scope.
-  *
-  *= require_tree .
-  *= require_self
-  */

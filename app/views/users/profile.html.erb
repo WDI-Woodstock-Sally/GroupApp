@@ -1,3 +1,30 @@
+
+<div class="mobile-nav">
+     <div class="menu-btn" id="menu-btn">
+	<div></div>
+	<span></span>
+	<span></span>
+	<span></span>
+     </div>
+
+     <div class="responsive-menu">
+        <ul>
+          <li>
+            <%= form_tag('/profile', method: :get) do %>
+             <%= submit_tag "Profile"%>
+            <% end %>
+          </li>
+           <li>
+             <%= form_tag('/log_out', method: :delete) do %>
+              <%= submit_tag "Log-Out"%>
+             <% end %>
+           </li>
+        </ul>
+     </div>
+</div>
+
+
+
 <h3>Welcome back <%= @user.username %></h3>
 
 <%= form_tag('/log_out', method: :delete) do %>
@@ -7,3 +34,6 @@
 <p>
   You're signed in...
 </p>
+<%= form_tag('/', method: :get) do %>
+  <%= submit_tag "Start Game!" %>
+<% end %>
