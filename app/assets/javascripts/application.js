@@ -56,25 +56,27 @@ $(document).ready(function(evt){
   }
 
   $('#start-trivia').click(function(){
-    var timer = 10;
+    var numQuestions = parseInt($("#start-questions").val());
+    var seconds = parseInt($("#start-time").val());
+    var timer = seconds;
     active.newQuestion();
     setIntervalX(function(){
       timer --;
       //console.log(timer);
       $("#timer").text(timer.toString());
 
-    }, 1000, 10);
+    }, 1000, seconds);
     setIntervalX(function(){
-      timer = 10;
+      timer = seconds;
       setIntervalX(function(){
         timer --;
         //console.log(timer);
         $("#timer").text(timer.toString());
 
-      }, 1000, 10);
+      }, 1000, seconds);
 
       active.newQuestion();
-    }, 10000, 10);
+    }, seconds * 1000, numQuestions);
   })
 
   $('.question-li').click(function(){
