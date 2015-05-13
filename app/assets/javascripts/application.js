@@ -103,7 +103,7 @@ $(document).ready(function(evt){
     var data = snapshot.val();
     var prompt = data.prompt;
     var right = data.right;
-    var wrongs = data.wrong;
+    var wrongs = data.wrongs;
 
     var questionElement = $('#question-h2');
     var answerElements = $('.question-li');

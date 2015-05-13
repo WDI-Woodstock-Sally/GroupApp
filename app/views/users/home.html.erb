@@ -17,7 +17,9 @@
         <button class='question-li' value = 2 >three</li>
         <button class='question-li' value = 3 >four</li>
       </ul>
+      <% if @current_user.admin == true %>
       <button type="button" value="new question" id="new-question">New Question</button>
+      <% end if%>
     </div>
     <!-- QUESTION FIELD -->
 
