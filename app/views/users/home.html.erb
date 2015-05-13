@@ -9,7 +9,7 @@
   <div id="wrapper">
     <div class="left-nav"><h1>TriviaBase</h1></div>
     <!-- QUESTION FIELD -->
-    <h2 id = "timer">20</h2>
+    <h2 id = "timer"></h2>
     <div id="question-container">
       <h2 id='question-h2'>Why is a Raven like a writing desk?</h2>
       <ul id='answers'>
@@ -31,8 +31,8 @@
       <header>TriviaBase Chat</header>
 
       <div class='example-chat-toolbar'>
-        <label for="nameInput">Username:</label>
-        <input type='text' id='nameInput' placeholder='enter a username...'>
+        <label for="nameInput">Username:<%= @current_user.username %></label>
+        <input type='text' hidden = true id='nameInput' value=<%= @current_user.username %> >
       </div>
 
       <ul id='example-messages' class="example-chat-messages"></ul>

@@ -18,6 +18,8 @@
 var app = app || {};
 var active = active || {};
 
+//function checkAnswer()
+
 function setIntervalX(callback, delay, repetitions) {
     var x = 0;
     var intervalID = window.setInterval(function () {
