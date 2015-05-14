@@ -95,9 +95,10 @@ $(document).ready(function(evt){
   app.activePlayerScores = new app.ActivePlayerListView({
     modelView: app.ActivePlayerView,
     collection: app.activePlayers,
-    el: $("#kitchen-orders")
+    el: $("#scoreboard")
 
   })
+  //app.activePlayers.fetch();
 
 
 
