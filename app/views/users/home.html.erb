@@ -66,7 +66,9 @@
 <!--     CHAT MARKUP          -->
     <div class="chat-demo-container three columns">
       <header>TriviaBase Chat</header>
+      <ul id="scoreboard">
 
+      </ul>
       <div class='example-chat-toolbar'>
         <label for="nameInput">Username:<%= @current_user.username %> </label>
         <input type='text' hidden = true id='nameInput' value=<%= @current_user.username %> >
