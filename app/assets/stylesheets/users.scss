@@ -2,7 +2,11 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
+#sign_upBtn{
+  margin: 0px auto;
+  width: 172px;
+  background-color: rgba(211, 211, 211, 0.35);
+}
 .menu-btn div {
 	position: absolute;
 	left: 100%;
