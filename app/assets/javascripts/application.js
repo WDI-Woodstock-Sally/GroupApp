@@ -35,18 +35,20 @@ function setIntervalX(callback, delay, repetitions) {
 
 $(document).ready(function(evt){
 
+  $( '.menu-btn' ).click(function(){
+    $('.responsive-menu').toggleClass('expand');
+  })
+
+  // REGISTER DOM ELEMENTS
+  var messageField = $('#messageInput');
+  var nameField = $('#nameInput');
+  var messageList = $('#example-messages');
+
   app.ActivePlayerModel = Backbone.Firebase.Model.extend({
 
     defaults: {
-      username: '',
+      username: nameField.val(),
       score: 10
-    },
-
-    // Toggle the `completed` state of this todo item.
-    up: function () {
-      this.save({
-        score: this.get('score') + 10
-      });
     }
 
   });
@@ -102,11 +104,6 @@ $(document).ready(function(evt){
   })
   //app.activePlayers.fetch();
 
-
-
-  $( '.menu-btn' ).click(function(){
-    $('.responsive-menu').toggleClass('expand');
-  })
 
   // CREATE A REFERENCE TO FIREBASE
   active.messagesRef = new Firebase('https://triviabase.firebaseio.com/messages');
@@ -165,17 +162,22 @@ $(document).ready(function(evt){
       $('.answer-selected').removeClass('answer-selected');
       $('#submit-answer').hide();
       //console.log("correct!");
-      active.activePlayersRef.child('username').equalTo(nameField.val()).once("value", function(snapshot) {
-        if(snapshot.exists() == true)
+
+      if(app.activePlayers.where({username: nameField.val()}) != 0)
         {
-          console.log('user exists in table');
+          user = app.activePlayers.where({username: nameField.val()})
+          tempscore = user[0].attributes.score + 10;
+          user[0].save({score: tempscore});
         }
         else{
-          console.log(snapshot)
-          console.log('user does not exist')
-          active.activePlayersRef.push({username: nameField.val(), score:10})
+          console.log('user does not exit')
+          var tempname = nameField.val();
+          app.activePlayers.add({
+            username: tempname,
+            score: 20
+
+          })
         }
-      });
 
     }
     else{
@@ -205,10 +207,7 @@ $(document).ready(function(evt){
   }
 
 
-  // REGISTER DOM ELEMENTS
-  var messageField = $('#messageInput');
-  var nameField = $('#nameInput');
-  var messageList = $('#example-messages');
+
 
   // LISTEN FOR KEYPRESS EVENT
   messageField.keypress(function (e) {
