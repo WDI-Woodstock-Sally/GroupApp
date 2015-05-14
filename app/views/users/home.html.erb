@@ -6,10 +6,35 @@
   <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 </head>
 <body>
-  <div id="wrapper">
-    <div class="left-nav"><h1>TriviaBase</h1>
 
+  <div id="wrapper">
+
+    <div class="mobile-nav">
+         <div class="menu-btn" id="menu-btn">
+    	<div></div>
+    	<span></span>
+    	<span></span>
+    	<span></span>
+         </div>
+
+         <div class="responsive-menu">
+           <div class="left-nav"><h1>TriviaBase</h1>
+            <ul>
+              <li>
+                <%= form_tag('/profile', method: :get) do %>
+                 <%= submit_tag "Profile"%>
+                <% end %>
+              </li>
+               <li>
+                 <%= form_tag('/log_out', method: :delete) do %>
+                  <%= submit_tag "Log-Out"%>
+                 <% end %>
+               </li>
+            </ul>
+          </div>
+         </div>
     </div>
+
     <!--     QUESTION FIELD         -->
       <div id="question-container">
         <div class="Qdiv">
