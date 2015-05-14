@@ -80,7 +80,9 @@ $(document).ready(function(evt){
   render: function(){
     console.log("render scores")
     var models = this.collection.models;
+    this.$el.empty();
     for (var i = 0; i < models.length; i++) {
+
       var subView = new this.modelView({model: models[i]});
       subView.render();
       this.$el.append( subView.$el );
