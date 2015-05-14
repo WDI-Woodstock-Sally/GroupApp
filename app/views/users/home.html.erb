@@ -8,12 +8,12 @@
 <body>
   <div id="wrapper">
     <div class="left-nav"><h1>TriviaBase</h1>
+
     </div>
     <!-- QUESTION FIELD -->
     <div id="question-container">
       <div class="Qdiv">
-        <h2 id='question-h2'>Why is a Raven like a writing desk?</h2>
-        <h2 id = "timer">20</h2>
+        <h2 id='question-h2'>Why is a Raven like a writing desk?</h2><h2 id = "timer">20</h2>
       </div>
       <ul id='answers'>
         <button class='question-li' value = 0 >one</li>
@@ -21,11 +21,7 @@
         <button class='question-li' value = 2 >three</li>
         <button class='question-li' value = 3 >four</li>
       </ul>
-      <% if @current_user.admin == true %>
-      <input type="number" id="start-questions" placeholder="questions...">
-      <input type="number" id="start-time" placeholder="seconds...">
-      <button type="button" id="start-trivia">start trivia</button>
-      <% end if %>
+
     </div>
     <!-- QUESTION FIELD -->
 
@@ -42,6 +38,19 @@
 
       <div id ="chat-input">
         <input type='text' id='messageInput'  placeholder='Type a   message...'>
+      </div>
+      <div id="admin-container">
+        <% if @current_user.admin == true %>
+        <h3 id="game-options">Game Preferences</h3>
+        <div class="admin-input">
+          <h4>Questions</h4> <input type="number" id="start-questions" placeholder="questions...">
+        </div>
+        <div class="admin-input">
+          <h4>Timer</h4> <input type="number" id="start-time" placeholder="seconds...">
+
+        </div>
+        <button type="button" id="start-trivia">start trivia</button>
+        <% end %>
       </div>
 
     </div>

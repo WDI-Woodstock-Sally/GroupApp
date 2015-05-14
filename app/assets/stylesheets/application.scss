@@ -14,7 +14,6 @@
   *= require_self
   */
 
-
 /*-_-_-_-_-_-_-_- PAGE -_-_-_-_-_-_-_-*/
 body{
   background-image: url("https://meganstorrs2014.files.wordpress.com/2014/01/broken-glass.jpg");
@@ -56,23 +55,19 @@ h1{
 #question-h2{
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
-  font-size: 30px;
-  padding:0px auto;
+  font-size:30px;
+  margin:0px auto;
+
 }
 #timer{
+  background-color: rgb(193, 227, 211);
   border: 2px rgba(107, 144, 88, 0.17) solid;
   border-radius: 15px;
-  text-align: right;
   font-size: 22px;
-  margin: 0px auto;
-  padding: 0px;
+  margin: 6px;
+  padding: 15px 5px;
   line-height: 0;
-<<<<<<< HEAD
-  display:inline;
-=======
-  display: inline;
-
->>>>>>> 5460cd663c31a30000a8f56defeb7979e01023c8
+  float:right;
 }
 .question-li{
   background-color: rgba(193, 227, 211, 0.41);
@@ -110,7 +105,17 @@ h1{
   -moz-box-shadow: 0px 7px 161px 20px rgba(0,0,0,0.44);
   box-shadow: 0px 7px 161px 20px rgba(0,0,0,0.44);
 }
+
 /*-_-_-_-_-_-_-_- CHAT MARKUP -_-_-_-_-_-_-_-*/
+h4{
+  width: 70px;
+  margin: 0px auto;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  display: inline;
+
+
+}
 header {
   line-height: 30px;
   font-family: 'Pacifico', cursive;
@@ -124,7 +129,6 @@ header {
   border: 2px rgb(95, 162, 88) solid;
   overflow: scroll;
   position: relative;
-  align-content: center;
   max-height:50%;
   padding: 5px 15px;
   -webkit-box-shadow: 0px 7px 161px 0px rgba(0, 0, 0, 0.44);
@@ -141,6 +145,33 @@ header {
 }
 #nameInput {
   border-radius: 6px;
+}
+#game-options{
+  font-family: 'Pacifico', cursive;
+  font-weight:300;
+  font-size:25px;
+  text-align:center;
+  margin:0px auto;
+}
+#start-questions{
+  float:right;
+}
+#start-time{
+  float:right;
+}
+#start-trivia{
+  width: 130px;
+  height: 70px;
+  background-color: rgba(193, 227, 211, 0.41);
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  border: 2px rgba(107, 144, 88, 0.17) solid;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 7px 161px 0px rgba(0,0,0,0.44);
+  -moz-box-shadow: 0px 7px 161px 0px rgba(0,0,0,0.44);
+  box-shadow: 0px 7px 161px 0px rgba(0,0,0,0.44);
+  margin: 0 25% 0;
 }
 //           ---- Chat Container ----
 .chat-demo-container {
@@ -170,6 +201,13 @@ header {
 .example-chat-username {
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
+}
+.admin-input{
+  margin:0px auto;
+  padding: 5px 0px 5px;
+}
+#admin-container{
+  padding: 0px 25px 0px;
 }
 /*-_-_-_-_-_-_-_- END -_-_-_-_-_-_-_-*/
 // random default junk below
