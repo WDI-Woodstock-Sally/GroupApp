@@ -35,7 +35,7 @@ function setIntervalX(callback, delay, repetitions) {
 
 $(document).ready(function(evt){
 
-  app.ActivePlayerModel = Backbone.Model.extend({
+  app.ActivePlayerModel = Backbone.Firebase.Model.extend({
 
     defaults: {
       username: '',
@@ -55,7 +55,51 @@ $(document).ready(function(evt){
     url: "https://triviabase.firebaseio.com/activeplayers"
   });
 
+  app.ActivePlayerView = Backbone.View.extend({
+    initialize: function(){
+      this.listenTo(this.model,'change', this.render);
+      this.listenTo(this.model,'delete', this.remove);
+    },
+    //__Time Left = <%= timeLeft%>
+    //__Created = <%= created%>
+    template: _.template('<%= username %>:<%= score %>'),
+    tagName: 'li',
+    className: 'player-score',
+    render: function(){
+
+      this.$el.append( this.template( this.model.attributes ) );
+      return this;
+    }
+  });
+
+  app.ActivePlayerListView = Backbone.View.extend({
+  initialize: function(options){
+    this.modelView = options.modelView;
+    this.listenTo(this.collection,'sync', this.render);
+  },
+  render: function(){
+    console.log("render scores")
+    var models = this.collection.models;
+    for (var i = 0; i < models.length; i++) {
+      var subView = new this.modelView({model: models[i]});
+      subView.render();
+      this.$el.append( subView.$el );
+      subView.delegateEvents();
+    }
+    return this;
+  },
+
+  });
+
   app.activePlayers = new app.ActivePlayerCollection();
+  app.activePlayerScores = new app.ActivePlayerListView({
+    modelView: app.ActivePlayerView,
+    collection: app.activePlayers,
+    el: $("#kitchen-orders")
+
+  })
+
+
 
   $( '.menu-btn' ).click(function(){
     $('.responsive-menu').toggleClass('expand');
