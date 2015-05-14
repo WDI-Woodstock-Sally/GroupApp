@@ -83,6 +83,21 @@ h1{
   -moz-box-shadow: 0px 7px 161px 0px rgba(0,0,0,0.44);
   box-shadow: 0px 7px 161px 0px rgba(0,0,0,0.44);
 }
+#submit-answer{
+  background-color: rgba(193, 227, 211, 0.41);
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  list-style-type: none;
+  border: 2px rgba(107, 144, 88, 0.17) solid;
+  margin-top: 10px;
+  padding: 5px;
+  width: 90%;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 7px 161px 0px rgba(0,0,0,0.44);
+  -moz-box-shadow: 0px 7px 161px 0px rgba(0,0,0,0.44);
+  box-shadow: 0px 7px 161px 0px rgba(0,0,0,0.44);
+}
 .answer-selected{
   background-color:lightblue;
 }

@@ -32,7 +32,30 @@ function setIntervalX(callback, delay, repetitions) {
     }, delay);
 }
 
+
 $(document).ready(function(evt){
+
+  app.ActivePlayerModel = Backbone.Model.extend({
+
+    defaults: {
+      username: '',
+      score: 10
+    },
+
+    // Toggle the `completed` state of this todo item.
+    up: function () {
+      this.save({
+        score: this.get('score') + 10
+      });
+    }
+
+  });
+  app.ActivePlayerCollection = Backbone.Firebase.Collection.extend({
+    model: app.ActivePlayerModel,
+    url: "https://triviabase.firebaseio.com/activeplayers"
+  });
+
+  app.activePlayers = new app.ActivePlayerCollection();
 
   $( '.menu-btn' ).click(function(){
     $('.responsive-menu').toggleClass('expand');
@@ -42,6 +65,7 @@ $(document).ready(function(evt){
   active.messagesRef = new Firebase('https://triviabase.firebaseio.com/messages');
   active.questionRef = new Firebase('https://triviabase.firebaseio.com/questions');
   active.activeQuestionRef = new Firebase('https://triviabase.firebaseio.com/activequestion');
+  active.activePlayersRef = new Firebase('https://triviabase.firebaseio.com/activeplayers');
 
 
   active.newQuestion = function(){
@@ -86,6 +110,37 @@ $(document).ready(function(evt){
     }, seconds * 1000, numQuestions);
   })
 
+  // 'answer-right'
+  // 'answer-wrong'
+  $("#submit-answer").click(function(){
+    if(parseInt($(".answer-selected").val()) == active.correct){
+      $('.answer-selected').addClass("answer-right");
+      $('.answer-selected').removeClass('answer-selected');
+      $('#submit-answer').hide();
+      //console.log("correct!");
+      active.activePlayersRef.child('username').equalTo(nameField.val()).once("value", function(snapshot) {
+        if(snapshot.exists() == true)
+        {
+          console.log('user exists in table');
+        }
+        else{
+          console.log(snapshot)
+          console.log('user does not exist')
+          active.activePlayersRef.push({username: nameField.val(), score:10})
+        }
+      });
+
+    }
+    else{
+      $('.answer-selected').addClass("answer-wrong");
+      $('.answer-selected').removeClass('answer-selected');
+      $('#submit-answer').hide();
+      //console.log("wrong!");
+    }
+
+  })
+
+
   $('.question-li').click(function(){
     $('.answer-selected').removeClass('answer-selected');
     $(this).addClass('answer-selected');
@@ -122,6 +177,10 @@ $(document).ready(function(evt){
   });
 
   active.activeQuestionRef.on('child_added', function(snapshot){
+
+    $('#submit-answer').show();
+    $('.answer-wrong').removeClass('answer-wrong');
+    $('.answer-right').removeClass('answer-right');
 
     var data = snapshot.val();
     var prompt = data.prompt;
@@ -170,3 +229,19 @@ $(document).ready(function(evt){
 
 
 })
+
+function findUserId(name, callback){
+  var selectedID=null;
+  ref = new Firebase('https://triviabase.firebaseio.com/activeplayers');
+  ref.once("value", function(data) {
+    var users = data.val();
+
+    for(id in users){
+      if (users[id].username == name){
+        selectedID = id;
+      }
+    }
+    callback(selectedID);
+  });
+
+}
