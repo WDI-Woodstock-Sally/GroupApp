@@ -32,15 +32,22 @@ h1{
   font-family: 'Oswald', sans-serif;
   font-weight: 500;
   font-size:30px;
+  border-radius: 15px;
+  padding: 10px 0;
+  background-color: rgb(193, 227, 211);
+
 }
 
 #timer{
-  background-color: rgb(193, 227, 211);
   border: 2px rgba(107, 144, 88, 0.17) solid;
-  border-radius: 15px;
+  border-radius: 100%;
+  float:right;
+  background-color: rgb(193, 227, 211);
   font-size: 22px;
   height: 2em;
-  line-height: 0;
+  width: 2em;
+  text-align: center;
+  line-height: 2em;
 }
 
 .question-li{
@@ -91,10 +98,10 @@ h1{
 
 
 .question-pain{
-  background-color: lightblue;
+  background-color: rgba(136, 106, 218, .10)
 }
 .chat-pain{
-  background-color: lightgreen;
+  background-color: rgba(136, 106, 218, .10)
 }
 
 
@@ -188,7 +195,7 @@ h1{
     box-shadow: 0px 7px 161px 0px rgba(0,0,0,0.44);
   }
   .answer-selected{
-    background-color:lightblue;
+    background-color:rgba(136, 106, 218, .10)
   }
   .answer-right{
     background-color:green;
