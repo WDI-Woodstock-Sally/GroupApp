@@ -16,11 +16,12 @@
 
 /*-_-_-_-_-_-_-_- PAGE -_-_-_-_-_-_-_-*/
 body{
-  background-image: url("https://meganstorrs2014.files.wordpress.com/2014/01/broken-glass.jpg");
+  background-image: url('http://i.imgur.com/YbskSZj.jpg');
   background-size:cover;
+  background-attachment:fixed;
+
 }
 #wrapper{
-  border:2px white dashed;
   height:700px;
   width:100%;
 }
@@ -174,7 +175,7 @@ header {
 #start-trivia{
   width: 130px;
   height: 70px;
-  background-color: rgba(193, 227, 211, 0.41);
+  background-color: rgba(38, 175, 188, 1);
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
   font-size: 24px;
