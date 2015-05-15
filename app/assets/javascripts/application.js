@@ -137,7 +137,7 @@ $(document).ready(function(evt){
     setIntervalX(function(){
       tempTime --;
       $("#timer").text(tempTime.toString());
-      
+
     }, 1000, active.seconds);
   }
 
