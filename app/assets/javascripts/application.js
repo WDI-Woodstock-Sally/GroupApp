@@ -110,7 +110,7 @@ $(document).ready(function(evt){
   active.questionRef = new Firebase('https://triviabase.firebaseio.com/questions');
   active.activeQuestionRef = new Firebase('https://triviabase.firebaseio.com/activequestion');
   active.activePlayersRef = new Firebase('https://triviabase.firebaseio.com/activeplayers');
-  active.timerRef = newFirebase('https://triviabase.firebaseio.com/timer');
+  active.timerRef = new Firebase('https://triviabase.firebaseio.com/timer');
 
 
   active.newQuestion = function(){
