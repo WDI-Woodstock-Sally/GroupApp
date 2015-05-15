@@ -25,6 +25,14 @@ body{
   height:700px;
   width:100%;
 }
+/*-_-_-_-_-_-_-_- NAV -_-_-_-_-_-_-_-*/
+#nav{
+	min-height: 40px;
+	width: 100%;
+	background-color: rgba(38, 175, 188, .5);
+	img{
+		display: none;
+	}
 /*-_-_-_-_-_-_-_- LEFT COLUM -_-_-_-_-_-_-_-*/
 h1{
   font-family: 'Varela Round', sans-serif;
@@ -34,7 +42,7 @@ h1{
 }
 //         ----- Left-nav Container -----
 .left-nav{
-  background-color: rgba(122, 186, 67, 0.69);
+  background-color: rgba(38, 175, 188, .5);
   border-radius: 30px;
   // border:2px white dashed;
   width:15%;
@@ -175,7 +183,7 @@ header {
 #start-trivia{
   width: 130px;
   height: 70px;
-  background-color: rgba(38, 175, 188, 1);
+  background-color: rgba (38, 175, 188, 1);
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
   font-size: 24px;
@@ -189,7 +197,7 @@ header {
 //           ---- Chat Container ----
 .chat-demo-container {
   padding: 0px 10px 0px;
-  background-color: rgba(122, 186, 67, 0.69);
+  background-color: rgba(38, 175, 188, .5);
   position: relative;
   height: 100%;
   width: 25%;
