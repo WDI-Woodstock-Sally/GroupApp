@@ -14,6 +14,20 @@
   *= require_self
   */
 
+//IMPORTS
+
+// FONTS
+$primary-font: 'Josefin Slab', serif;
+$secondary-font: 'Source Sans Pro', sans-serif;;
+$tertiary-font: 'Varela Round', sans-serif;
+$accept-font: 'Share Tech Mono', ;
+
+//COLORS
+$primary-color: rgba(38,175,188,.85);
+$secondary-color: rgba(95, 57,201,.85);
+$tertiary-color: rgba(173,243, 47,.85);
+$accept-color: rgba(196,247,104,.85);
+
 /*-_-_-_-_-_-_-_- PAGE -_-_-_-_-_-_-_-*/
 body{
   background-image: url('http://i.imgur.com/YbskSZj.jpg');
@@ -26,12 +40,10 @@ body{
   width:100%;
 }
 /*-_-_-_-_-_-_-_- NAV -_-_-_-_-_-_-_-*/
-#nav{
+nav#nav{
 	min-height: 40px;
 	width: 100%;
-	background-color: rgba(38, 175, 188, .5);
-	img{
-		display: none;
+	background-color: rgba(38, 175, 188, 1);
 	}
 /*-_-_-_-_-_-_-_- LEFT COLUM -_-_-_-_-_-_-_-*/
 h1{
