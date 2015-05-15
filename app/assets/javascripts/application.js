@@ -105,7 +105,7 @@ $(document).ready(function(evt){
   //app.activePlayers.fetch();
 
 
-  // CREATE A REFERENCE TO FIREBASE
+  // CREATE A REFERENCE TO  FIREBASE
   active.messagesRef = new Firebase('https://triviabase.firebaseio.com/messages');
   active.questionRef = new Firebase('https://triviabase.firebaseio.com/questions');
   active.activeQuestionRef = new Firebase('https://triviabase.firebaseio.com/activequestion');

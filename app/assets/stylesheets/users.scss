@@ -1,8 +1,20 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
-
+body{
+  background-image: url('http://i.imgur.com/YbskSZj.jpg');
+  background-size:cover;
+  background-attachment:fixed;
+}
+#wrapper{
+  height:700px;
+  width:100%;
+}
+#sign_upBtn{
+  margin: 0px auto;
+  width: 172px;
+  background-color: rgba(211, 211, 211, 0.35);
+}
 .menu-btn div {
 	position: absolute;
 	left: 100%;

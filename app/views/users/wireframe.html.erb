@@ -1,3 +1,28 @@
+<html>
+<head>
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+  <!-- Underscore -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore.js"></script>
+
+  <!-- Backbone -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone.js"></script>
+
+  <!-- Firebase -->
+  <script src="https://cdn.firebase.com/js/client/2.0.3/firebase.js"></script>
+
+  <!-- BackboneFire -->
+  <script src="https://cdn.firebase.com/libs/backbonefire/0.5.1/backbonefire.js"></script>
+
+  <link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+
+
+
 
 <div class='row'>
   <div class='sixteen columns' style='background-color: red'>
@@ -7,33 +32,57 @@
 
 
 <div class='row'>
-
-  <span class='two columns' style='background-color: blue'>
-    Data about the game
-  </span>
-
-  <span class='seven columns' style='background-color: yellow'>
-    <h3>Quetions</h3>
-    <ul>
-      <li>Answer</li>
-      <li>Answer</li>
-      <li>Answer</li>
-      <li>Answer</li>
-    </ul>
-    <button type="button" name="button">Submit</button>
-  </span>
-
-  <span class='three columns' style='background-color: green'>
-    <h3>ChatRoom</h3>
-    <ul>
-      <li>Data</li>
-      <li>Data</li>
-      <li>Data</li>
-    </ul>
-  </span>
-
-
-</div>
+  <br>
+    <span class='seven columns' style='background-color: blue'>
+      <h3>Questions</h3>
+      <ul>
+        <li>SKELETON</li>
+        <li>SKELETON</li>
+        <li>SKELETON</li>
+        <li>SKELETON</li>
+        <li>SKELETON</li>
+        <li>SKELETON</li>
+        <li>SKELETON</li>
+        <li>SKELETON</li>
+        <li>SKELETON</li>
+        <li>SKELETON</li>
+        <li>SKELETON</li>
+        <li>SKELETON</li>
+      </ul>
+    </span>
+    <span class='seven columns' style='background-color: yellow'>
+      <h3>Questions</h3>
+      <ul>
+        <li>SKELETON</li>
+        <li>SKELETON</li>
+        <li>SKELETON</li>
+        <li>SKELETON</li>
+        <li>SKELETON</li>
+        <li>SKELETON</li>
+        <li>SKELETON</li>
+        <li>SKELETON</li>
+        <li>SKELETON</li>
+        <li>SKELETON</li>
+        <li>SKELETON</li>
+        <li>SKELETON</li>
+      </ul>
+      <button type="button" name="button">Submit</button>
+    </span>
+    <span class='seven columns'>
+      <div class="responsive-menu">
+        <ul>
+          <li>
+            <%= form_tag('/profile', method: :get) do %>
+            <%= submit_tag "Profile"%>
+            <% end %>
+          </li>
+          <li>
+            <%= form_tag('/log_out', method: :delete) do %>
+            <%= submit_tag "Log-Out"%>
+            <% end %>
+          </li>
+        </ul>
+      </div>
 
 
 <div class="row">

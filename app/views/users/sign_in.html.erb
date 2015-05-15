@@ -7,5 +7,6 @@
   <%= password_field_tag :password %>
   <%= submit_tag "Sign In"%>
 <% end %>
-
-<a href="/users/new">Sign up!</a>
+<%= form_tag('/users/new', method: :get ) do %>
+  <%= submit_tag "Sign up to Play", :id => 'sign_upBtn' %>
+<% end %>
