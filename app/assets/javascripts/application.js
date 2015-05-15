@@ -110,6 +110,7 @@ $(document).ready(function(evt){
   active.questionRef = new Firebase('https://triviabase.firebaseio.com/questions');
   active.activeQuestionRef = new Firebase('https://triviabase.firebaseio.com/activequestion');
   active.activePlayersRef = new Firebase('https://triviabase.firebaseio.com/activeplayers');
+  active.timerRef = newFirebase('https://triviabase.firebaseio.com/timer');
 
 
   active.newQuestion = function(){
@@ -129,18 +130,43 @@ $(document).ready(function(evt){
     });
   }
 
-  $('#start-trivia').click(function(){
-    var numQuestions = parseInt($("#start-questions").val());
-    var seconds = parseInt($("#start-time").val());
+  function startTimer(seconds){
+
+    timerRef.once("value", function(data) {
+      var users = data.val();
+
+      for(id in users){
+        if (users[id].username == name){
+          selectedID = id;
+        }
+      }
+      callback(selectedID);
+    });
+
     var timer = seconds;
-    $('.answer-selected').removeClass('answer-selected');
-    active.newQuestion();
     setIntervalX(function(){
       timer --;
       //console.log(timer);
       $("#timer").text(timer.toString());
 
     }, 1000, seconds);
+  }
+
+  $('#start-trivia').click(function(){
+    var numQuestions = parseInt($("#start-questions").val());
+    var seconds = parseInt($("#start-time").val());
+    var timer = seconds;
+    $('.answer-selected').removeClass('answer-selected');
+    active.newQuestion();
+
+
+    setIntervalX(function(){
+      timer --;
+      //console.log(timer);
+      $("#timer").text(timer.toString());
+
+    }, 1000, seconds);
+
     setIntervalX(function(){
       timer = seconds;
       setIntervalX(function(){
