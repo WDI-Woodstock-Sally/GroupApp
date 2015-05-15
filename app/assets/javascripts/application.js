@@ -34,6 +34,7 @@ function setIntervalX(callback, delay, repetitions) {
 
 
 $(document).ready(function(evt){
+  active.seconds;
 
   $( '.menu-btn' ).click(function(){
     $('.responsive-menu').toggleClass('expand');
@@ -130,51 +131,27 @@ $(document).ready(function(evt){
     });
   }
 
-  function startTimer(seconds){
-
-    timerRef.once("value", function(data) {
-      var users = data.val();
-
-      for(id in users){
-        if (users[id].username == name){
-          selectedID = id;
-        }
-      }
-      callback(selectedID);
-    });
-
-    var timer = seconds;
+  active.startTimer = function(seconds){
+    var tempTime = active.seconds;
+    console.log(tempTime)
     setIntervalX(function(){
-      timer --;
-      //console.log(timer);
-      $("#timer").text(timer.toString());
-
-    }, 1000, seconds);
+      tempTime --;
+      $("#timer").text(tempTime.toString());
+      
+    }, 1000, active.seconds);
   }
 
   $('#start-trivia').click(function(){
     var numQuestions = parseInt($("#start-questions").val());
     var seconds = parseInt($("#start-time").val());
-    var timer = seconds;
+    active.timerRef.remove();
+    active.timerRef.push({seconds: seconds})
     $('.answer-selected').removeClass('answer-selected');
     active.newQuestion();
 
-
     setIntervalX(function(){
-      timer --;
-      //console.log(timer);
-      $("#timer").text(timer.toString());
+      timer = active.seconds;
 
-    }, 1000, seconds);
-
-    setIntervalX(function(){
-      timer = seconds;
-      setIntervalX(function(){
-        timer --;
-        //console.log(timer);
-        $("#timer").text(timer.toString());
-
-      }, 1000, seconds);
       $('.answer-selected').removeClass('answer-selected');
       active.newQuestion();
     }, seconds * 1000, numQuestions);
@@ -248,6 +225,19 @@ $(document).ready(function(evt){
     }
   });
 
+
+  active.timerRef.on('child_added', function(snapshot){
+
+
+      var timer = snapshot.val();
+      var seconds = timer.seconds;
+      active.seconds = timer.seconds;
+
+    }, function (errorObject) {
+      console.log("The read failed: " + errorObject.code);
+
+  })
+
   active.activeQuestionRef.on('child_added', function(snapshot){
 
     $('#submit-answer').show();
@@ -270,6 +260,7 @@ $(document).ready(function(evt){
       else { answerElements[i].textContent = right }
 
     }
+    active.startTimer();
 
 
 
