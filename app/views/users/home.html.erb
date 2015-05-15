@@ -21,9 +21,34 @@
 <body>
 
   <div id="wrapper">
+<!-- Hamburger Nav -->
+      <div class="mobile-nav">
+        <div class='sixteen columns'>
+        <div class="menu-btn" id="menu-btn">
+    	     <!-- <div></div>
+    	      <span></span>
+    	      <span></span>
+    	      <span></span> -->
+            </div>
 
+            <div class="responsive-menu">
+              <span class='seven columns'>
+              <ul>
+                <li>
+                  <%= form_tag('/profile', method: :get) do %>
+                  <%= submit_tag "Profile"%>
+                  <% end %>
+                </li>
+                <li>
+                  <%= form_tag('/log_out', method: :delete) do %>
+                  <%= submit_tag "Log-Out"%>
+                  <% end %>
+                </li>
+              </ul>
+            </div><!-- responsive-menu end -->
+      </div>
 
-      <div class="left-nav three columns"><h1>TriviaBase</h1></div>
+      <span class='seven columns'><h1>TriviaBase</h1></div>
 
 <!--     QUESTION FIELD         -->
     <div id="question-container" class='three columns'>
@@ -73,6 +98,12 @@
 
     </div>
 <!--     CHAT SCOREBOARD END      -->
-  </div>
+<span class='footer sixteen columns'>
+
+</span>
+
+</div>
+
+</div>
 </body>
 </html>
