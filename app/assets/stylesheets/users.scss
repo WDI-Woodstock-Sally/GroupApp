@@ -1,46 +1,45 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-body{
-  background-image: url('http://i.imgur.com/YbskSZj.jpg');
-  background-size:cover;
-  background-attachment:fixed;
-}
-#wrapper{
-  height:700px;
-  width:100%;
-}
-#sign_upBtn{
-  margin: 0px auto;
-  width: 172px;
-  background-color: rgba(211, 211, 211, 0.35);
-}
-.menu-btn div {
-	position: absolute;
-	left: 100%;
-	top: 64%;
-	padding-right: 8px;
-	margin-top: -0.50em;
-	line-height: 1.2;
-	font-size: 18px;
-	font-weight: 200;
-	vertical-align: middle;
-	z-index: 99;
-}
 
-.menu-btn span {
-	display: block;
-	width: 29px;
-	height: 4px;
-	margin: 5px 0;
-	background: rgb(0,50,0);
-	z-index: 99;
-}
 
-.responsive-menu{
-	display: none;
-}
 
-.expand {
-	display: block !important;
-}
+
+  #wrapper{
+    height:700px;
+    width:100%;
+  }
+  #sign_upBtn{
+    margin: 0px auto;
+    width: 172px;
+    background-color: rgba(211, 211, 211, 0.35);
+  }
+  .menu-btn div {
+  	position: absolute;
+  	left: 100%;
+  	top: 64%;
+  	padding-right: 8px;
+  	margin-top: -0.50em;
+  	line-height: 1.2;
+  	font-size: 18px;
+  	font-weight: 200;
+  	vertical-align: middle;
+  	z-index: 99;
+  }
+
+  .menu-btn span {
+  	display: block;
+  	width: 29px;
+  	height: 4px;
+  	margin: 5px 0;
+  	background: rgb(0,50,0);
+  	z-index: 99;
+  }
+
+  .responsive-menu{
+  	display: none;
+  }
+
+  .expand {
+  	display: block !important;
+  }

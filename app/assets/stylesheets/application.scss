@@ -13,219 +13,301 @@
   *= require_tree .
   *= require_self
   */
+
 body{
   background-image: url('http://i.imgur.com/YbskSZj.jpg');
-  background-size:cover;
+  background-size: cover;
   background-attachment:fixed;
+}
 
-}
-#wrapper{
-  height:700px;
-  width:100%;
-}
-/*-_-_-_-_-_-_-_- NAV -_-_-_-_-_-_-_-*/
-#nav{
-	min-height: 50px;
-	width: 100%;
-	background-color: rgba(38, 175, 188, .5);
-	img{
-		display: none;
-	}
-}
 /*-_-_-_-_-_-_-_- LEFT COLUM -_-_-_-_-_-_-_-*/
 h1{
   font-family: 'Varela Round', sans-serif;
   font-weight:300;
-  font-size:30px;
+  font-size:12px;
   text-align:center;
 }
-//         ----- Left-nav Container -----
-.left-nav{
-  background-color: rgba(38, 175, 188, .5);
-  border-radius: 30px;
-  // border:2px white dashed;
-  width:15%;
-  margin:2px;
-  height:100%;
-  float: left;
-  -webkit-box-shadow: 0px 7px 161px 60px rgba(0,0,0,0.44);
-  -moz-box-shadow: 0px 7px 161px 60px rgba(0,0,0,0.44);
-  box-shadow: 0px 7px 161px 60px rgba(0,0,0,0.44);
-}
-/*-_-_-_-_-_-_-_- QUESTION FIELD -_-_-_-_-_-_-_-*/
-//         ----- Questions Container -----
-#question-container {
-  padding: 0% 4% 0%;
-  width: 49%;
-  position: relative;
-  float: left;
-}
+
 #question-h2{
   font-family: 'Oswald', sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   font-size:30px;
-  margin:0px auto;
 }
+
 #timer{
   background-color: rgb(193, 227, 211);
   border: 2px rgba(107, 144, 88, 0.17) solid;
   border-radius: 15px;
   font-size: 22px;
-  margin: 6px;
-  padding: 15px 5px;
+  height: 2em;
   line-height: 0;
-  float:right;
 }
+
 .question-li{
   background-color: rgba(193, 227, 211, 0.41);
   font-family: 'Oswald', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 22px;
   list-style-type: none;
   border: 2px rgba(107, 144, 88, 0.17) solid;
   margin-top: 10px;
-  padding: 5px;
-  width: 90%;
   border-radius: 15px;
   -webkit-box-shadow: 0px 7px 161px 0px rgba(0,0,0,0.44);
   -moz-box-shadow: 0px 7px 161px 0px rgba(0,0,0,0.44);
   box-shadow: 0px 7px 161px 0px rgba(0,0,0,0.44);
 }
-#submit-answer{
-  background-color: rgba(193, 227, 211, 0.41);
-  font-family: 'Oswald', sans-serif;
-  font-weight: 400;
-  font-size: 22px;
-  list-style-type: none;
-  border: 2px rgba(107, 144, 88, 0.17) solid;
-  margin-top: 10px;
-  padding: 5px;
-  width: 90%;
-  border-radius: 15px;
-  -webkit-box-shadow: 0px 7px 161px 0px rgba(0,0,0,0.44);
-  -moz-box-shadow: 0px 7px 161px 0px rgba(0,0,0,0.44);
-  box-shadow: 0px 7px 161px 0px rgba(0,0,0,0.44);
+//
+// .menu-btn div {
+//   position: absolute;
+//   left: 100%;
+//   top: 64%;
+//   padding-right: 8px;
+//   margin-top: -0.50em;
+//   line-height: 1.2;
+//   font-size: 18px;
+//   font-weight: 200;
+//   vertical-align: middle;
+//   z-index: 99;
+// }
+//
+// .menu-btn span {
+//   display: block;
+//   width: 29px;
+//   height: 4px;
+//   margin: 5px 0;
+//   background: rgb(0,50,0);
+//   z-index: 99;
+// }
+//
+// .responsive-menu{
+//   display: none;
+// }
+//
+// .expand {
+//   display: block !important;
+// }
+//
+//
+
+
+.question-pain{
+  background-color: lightblue;
 }
-.answer-selected{
-  background-color:lightblue;
-}
-.answer-right{
-  background-color:green;
-}
-.answer-wrong{
-  background-color:red;
-}
-.Qdiv{
-  background-color: rgb(193, 227, 211);
-  font-family: 'Oswald', sans-serif;
-  font-weight: 700;
-  font-size: 30px;
-  border: 2px rgba(107, 144, 88, 0.17) solid;
-  text-align: center;
-  border-radius: 15px;
-  -webkit-box-shadow: 0px 7px 161px 20px rgba(0,0,0,0.44);
-  -moz-box-shadow: 0px 7px 161px 20px rgba(0,0,0,0.44);
-  box-shadow: 0px 7px 161px 20px rgba(0,0,0,0.44);
+.chat-pain{
+  background-color: lightgreen;
 }
 
-/*-_-_-_-_-_-_-_- CHAT MARKUP -_-_-_-_-_-_-_-*/
-h4{
-  width: 70px;
-  margin: 0px auto;
-  font-family: 'Oswald', sans-serif;
-  font-weight: 300;
-  display: inline;
-}
-header {
-  line-height: 30px;
-  font-family: 'Varela Round', sans-serif;
-  font-size: 25px;
-  text-align: center;
-}
-#example-messages {
-  background-color: rgba(225, 234, 218, 0.43);
-  margin: 5px;
-  border-radius: 20px;
-  border: 2px rgb(95, 162, 88) solid;
-  overflow: scroll;
-  position: relative;
-  max-height:50%;
-  padding: 5px 15px;
-  -webkit-box-shadow: 0px 7px 161px 0px rgba(0, 0, 0, 0.44);
-  -moz-box-shadow: 0px 7px 161px 0px rgba(0, 0, 0, 0.44);
-  box-shadow: 0px 7px 161px 0px rgba(0, 0, 0, 0.44);
-}
-#messageInput {
-  width: 100%;
-  border-radius: 6px;
-}
-#chat-input {
-  margin: 0 auto;
-  width: 90%;
-}
-#nameInput {
-  border-radius: 6px;
-}
-#game-options{
-  font-family: 'Varela Round', sans-serif;
-  font-weight:300;
-  font-size:25px;
-  text-align:center;
-  margin:0px auto;
-}
-#start-questions{
-  float:right;
-}
-#start-time{
-  float:right;
-}
-#start-trivia{
-  width: 130px;
-  height: 70px;
-  background-color: rgba (38, 175, 188, 1);
-  font-family: 'Oswald', sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  border: 2px rgba(107, 144, 88, 0.17) solid;
-  border-radius: 20px;
-  -webkit-box-shadow: 0px 7px 161px 0px rgba(0,0,0,0.44);
-  -moz-box-shadow: 0px 7px 161px 0px rgba(0,0,0,0.44);
-  box-shadow: 0px 7px 161px 0px rgba(0,0,0,0.44);
-  margin: 0 25% 0;
-}
-//           ---- Chat Container ----
-.chat-demo-container {
-  padding: 0px 10px 0px;
-  background-color: rgba(38, 175, 188, .5);
-  position: relative;
-  height: 100%;
-  width: 25%;
-  margin: 2px;
-  float: left;
-  border-radius: 30px;
-  -webkit-box-shadow: 0px 7px 161px 60px rgba(0, 0, 0, 0.44);
-  -moz-box-shadow: 0px 7px 161px 60px rgba(0, 0, 0, 0.44);
-  box-shadow: 0px 7px 161px 60px rgba(0, 0, 0, 0.44);
-}
-.chat-message {
-  list-style-type: none;
-  font-family: 'Oswald', sans-serif;
-  font-weight: 400;
-}
-.example-chat-toolbar {
-  line-height: 20px;
-  font-family: 'Oswald', sans-serif;
-  font-weight: 700;
-  text-align: center;
-}
-.example-chat-username {
-  font-family: 'Oswald', sans-serif;
-  font-weight: 700;
-}
-.admin-input{
-  margin:0px auto;
-  padding: 5px 0px 5px;
-}
-#admin-container{
-  padding: 0px 25px 0px;
+
+
+
+
+.old{
+
+  #wrapper{
+    height:700px;
+    width:100%;
+  }
+  /*-_-_-_-_-_-_-_- NAV -_-_-_-_-_-_-_-*/
+  #nav{
+  	min-height: 200px;
+  	width: 100%;
+    background-color: rgba(38, 175, 188, .5);
+  }
+  /*-_-_-_-_-_-_-_- LEFT COLUM -_-_-_-_-_-_-_-*/
+  h1{
+    font-family: 'Varela Round', sans-serif;
+    font-weight:300;
+    font-size:12px;
+    text-align:center;
+  }
+  //         ----- Left-nav Container -----
+  .left-nav{
+    background-color: rgba(38, 175, 188, .5);
+    border-radius: 60px;
+    // border:2px white dashed;
+    width:30%;
+    margin:2px;
+    height:100%;
+    float: left;
+    -webkit-box-shadow: 0px 7px 161px 60px rgba(0,0,0,0.44);
+    -moz-box-shadow: 0px 7px 161px 60px rgba(0,0,0,0.44);
+    box-shadow: 0px 7px 161px 60px rgba(0,0,0,0.44);
+  }
+  /*-_-_-_-_-_-_-_- QUESTION FIELD -_-_-_-_-_-_-_-*/
+  //         ----- Questions Container -----
+  #question-container {
+    //padding: 0% 4% 0%;
+    width: 60%;
+    position: relative;
+    float: left;
+  }
+  #question-h2{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size:30px;
+    margin:0px auto;
+  }
+  #timer{
+    background-color: rgb(193, 227, 211);
+    border: 2px rgba(107, 144, 88, 0.17) solid;
+    border-radius: 15px;
+    font-size: 22px;
+    margin: 6px;
+    padding: 15px 5px;
+    line-height: 0;
+    float: right;
+  }
+  .question-li{
+    background-color: rgba(193, 227, 211, 0.41);
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    list-style-type: none;
+    border: 2px rgba(107, 144, 88, 0.17) solid;
+    margin-top: 10px;
+    padding: 5px;
+    width: 90%;
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 7px 161px 0px rgba(0,0,0,0.44);
+    -moz-box-shadow: 0px 7px 161px 0px rgba(0,0,0,0.44);
+    box-shadow: 0px 7px 161px 0px rgba(0,0,0,0.44);
+  }
+  #submit-answer{
+    background-color: rgba(193, 227, 211, 0.41);
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    list-style-type: none;
+    border: 2px rgba(107, 144, 88, 0.17) solid;
+    margin-top: 10px;
+    padding: 5px;
+    width: 90%;
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 7px 161px 0px rgba(0,0,0,0.44);
+    -moz-box-shadow: 0px 7px 161px 0px rgba(0,0,0,0.44);
+    box-shadow: 0px 7px 161px 0px rgba(0,0,0,0.44);
+  }
+  .answer-selected{
+    background-color:lightblue;
+  }
+  .answer-right{
+    background-color:green;
+  }
+  .answer-wrong{
+    background-color:red;
+  }
+  .Qdiv{
+    background-color: rgb(193, 227, 211);
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    border: 2px rgba(107, 144, 88, 0.17) solid;
+    text-align: center;
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 7px 161px 20px rgba(0,0,0,0.44);
+    -moz-box-shadow: 0px 7px 161px 20px rgba(0,0,0,0.44);
+    box-shadow: 0px 7px 161px 20px rgba(0,0,0,0.44);
+  }
+
+  /*-_-_-_-_-_-_-_- CHAT MARKUP -_-_-_-_-_-_-_-*/
+  h4{
+    width: 70px;
+    margin: 0px auto;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    display: inline;
+  }
+  header {
+    line-height: 30px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 25px;
+    text-align: center;
+  }
+  #example-messages {
+    background-color: rgba(225, 234, 218, 0.43);
+    margin: 5px;
+    border-radius: 20px;
+    border: 2px rgb(95, 162, 88) solid;
+    overflow: scroll;
+    position: relative;
+    max-height:50%;
+    padding: 5px 15px;
+    -webkit-box-shadow: 0px 7px 161px 0px rgba(0, 0, 0, 0.44);
+    -moz-box-shadow: 0px 7px 161px 0px rgba(0, 0, 0, 0.44);
+    box-shadow: 0px 7px 161px 0px rgba(0, 0, 0, 0.44);
+  }
+  #messageInput {
+    width: 100%;
+    border-radius: 6px;
+  }
+  #chat-input {
+    margin: 0 auto;
+    width: 90%;
+  }
+  #nameInput {
+    border-radius: 6px;
+  }
+  #game-options{
+    font-family: 'Varela Round', sans-serif;
+    font-weight:300;
+    font-size:25px;
+    text-align:center;
+    margin:0px auto;
+  }
+  #start-questions{
+    float:right;
+  }
+  #start-time{
+    float:right;
+  }
+  #start-trivia{
+    width: 130px;
+    height: 70px;
+    background-color: rgba (38, 175, 188, 1);
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    border: 2px rgba(107, 144, 88, 0.17) solid;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 7px 161px 0px rgba(0,0,0,0.44);
+    -moz-box-shadow: 0px 7px 161px 0px rgba(0,0,0,0.44);
+    box-shadow: 0px 7px 161px 0px rgba(0,0,0,0.44);
+    margin: 0 25% 0;
+  }
+  //           ---- Chat Container ----
+  .chat-demo-container {
+    //padding: 0px 2% 0px;
+    background-color: rgba(38, 175, 188, .5);
+    position: relative;
+    height: 100%;
+    width: 40%;
+    //margin: 2px;
+    float: left;
+    border-radius: 30px;
+    -webkit-box-shadow: 0px 7px 161px 60px rgba(0, 0, 0, 0.44);
+    -moz-box-shadow: 0px 7px 161px 60px rgba(0, 0, 0, 0.44);
+    box-shadow: 0px 7px 161px 60px rgba(0, 0, 0, 0.44);
+  }
+  .chat-message {
+    list-style-type: none;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+  }
+  .example-chat-toolbar {
+    line-height: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    text-align: center;
+  }
+  .example-chat-username {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+  }
+  .admin-input{
+    margin:0px auto;
+    padding: 5px 0px 5px;
+  }
+  #admin-container{
+    padding: 0px 35px 0px;
+  }
 }
