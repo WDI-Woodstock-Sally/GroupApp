@@ -35,7 +35,6 @@ h1{
   border-radius: 15px;
   padding: 10px 0;
   background-color: rgb(193, 227, 211);
-
 }
 
 #timer{
@@ -63,7 +62,7 @@ h1{
   -moz-box-shadow: 0px 7px 161px 0px rgba(0,0,0,0.44);
   box-shadow: 0px 7px 161px 0px rgba(0,0,0,0.44);
 }
-//
+
 // .menu-btn div {
 //   position: absolute;
 //   left: 100%;
@@ -76,7 +75,7 @@ h1{
 //   vertical-align: middle;
 //   z-index: 99;
 // }
-//
+
 // .menu-btn span {
 //   display: block;
 //   width: 29px;
@@ -85,25 +84,24 @@ h1{
 //   background: rgb(0,50,0);
 //   z-index: 99;
 // }
-//
+
 // .responsive-menu{
 //   display: none;
 // }
-//
+
 // .expand {
 //   display: block !important;
 // }
-//
-//
-
 
 .question-pain{
-  background-color: rgba(136, 106, 218, .10)
+  background-color: rgba(136, 106, 218, .10);
 }
 .chat-pain{
-  background-color: rgba(136, 106, 218, .10)
+  background-color: rgba(136, 106, 218, .10);
 }
-
+.chat-inner-container{
+  background-color: rgba(193, 227, 211, .10);
+}
 
 
 
