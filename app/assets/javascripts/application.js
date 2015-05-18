@@ -177,7 +177,7 @@ $(document).ready(function(evt){
           var tempname = nameField.val();
           app.activePlayers.add({
             username: tempname,
-            score: 20
+            score: 10
 
           })
         }
