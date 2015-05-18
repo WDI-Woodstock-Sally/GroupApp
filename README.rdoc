@@ -1,4 +1,4 @@
-# H1 TriviaBase
+# H1 TriviaBase # H1
 
 Timeline
 
@@ -177,14 +177,14 @@ File organization/refactoring
 
 Resources
 
-| (https://css-tricks.com) |
-| (http://sass-lang.com/guide) |
-| (http://stackoverflow.com) |
-| (https://www.firebase.com/docs) |
-| (https://developer.mozilla.org/en-US/docs/WebSockets) |
-| (https://developer.mozilla.org/en-US/docs/Web/API/Node/contains) |
-| (https://developer.mozilla.org/en-US/docs/Web/Guide/API/WebRTC/WebRTC_basics) |
-| (http://responsivedesign.is/resources/frameworks/skeleton) |
+| https://css-tricks.com |
+| http://sass-lang.com/guide |
+| http://stackoverflow.com |
+| https://www.firebase.com/docs |
+| https://developer.mozilla.org/en-US/docs/WebSockets |
+| https://developer.mozilla.org/en-US/docs/Web/API/Node/contains |
+| https://developer.mozilla.org/en-US/docs/Web/Guide/API/WebRTC/WebRTC_basics |
+| http://responsivedesign.is/resources/frameworks/skeleton |
 
 The Team
 
