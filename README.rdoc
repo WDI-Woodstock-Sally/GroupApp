@@ -1,4 +1,4 @@
-# H1 TriviaBase # H1
+# TriviaBase
 
 Timeline
 
