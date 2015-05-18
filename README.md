@@ -162,19 +162,19 @@ Not required but implemented into the project
 
 ### Scaleable Features
 
-#### Have the game runs itself
-#### The admin feature will not be needed for a game to run
-#### The game will stop playing once all users are off the site
-#### More than one game played on the host
-#### Playing without a login
-#### Disabling the chat feature
+Have the game runs itself
+The admin feature will not be needed for a game to run
+The game will stop playing once all users are off the site
+More than one game played on the host
+Playing without a login
+Disabling the chat feature
 
 ### Outstanding Blockers
 
-#### More than one game played on the host
-#### Playing without a login
-#### All the pages are running application.js
-#### File organization/refactoring
+More than one game played on the host
+Playing without a login
+All the pages are running application.js
+File organization/refactoring
 
 
 ## Resources
