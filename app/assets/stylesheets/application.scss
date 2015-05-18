@@ -67,7 +67,7 @@ h1{
   box-shadow: 0px 7px 161px 0px rgba(0,0,0,0.44);
 }
 .question-pain{
-  background-color: rgba(136, 106, 218, .10);'
+  background-color: rgba(136, 106, 218, .10);
   list-style-type: none;
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
@@ -102,6 +102,15 @@ h1{
 #submit-answer{
   background-color: rgba(75, 32, 196, .20);
   list-style-type: none;
+}
+.answer-right{
+  background-color: green;
+}
+.answer-wrong{
+  background-color: red;
+}
+.answer-selected{
+  background-color: lightblue;
 }
 #admin-container{
   font-family: 'Oswald', sans-serif;
