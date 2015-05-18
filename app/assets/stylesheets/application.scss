@@ -28,14 +28,7 @@ body{
   border-radius: 5px;
   padding: 15px 15px 15px 15px;
 }
-.title{
-  font-family: 'Pacifico', cursive;
-  font-color: rgba(76, 173, 85, 1);
-  float: right;
-  font-weight: 300;
-  font-size: 48px;
-  list-style-type: none;
-}
+
 /*-_-_-_-_-_-_-_- LEFT COLUM -_-_-_-_-_-_-_-*/
 h1{
   font-family: 'Cabin', sans-serif;
@@ -53,11 +46,11 @@ h1{
   background-color: rgba(42, 43, 42, .55);
 }
 #timer{
-  border: 2px rgba(73, 52, 81, .70) solid;
+  border: 2px rgba(73, 52, 81, .30) solid;
   border-radius: 100%;
   float:right;
   list-style-type: none;
-  background-color: rgba(244, 255, 248, .95);
+  background-color: rgba(15, 244, 198, .45);
   font-size: 20px;
   height: 2em;
   width: 2em;
