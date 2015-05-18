@@ -8,15 +8,15 @@
 
 ##### Coming up with the an initial idea and technology to be implemented:
 
-###### When we begun to spike on ideas for where our project should head, we each came in with very different ideas. Our common ground being — we wanted to make something that felt both current while being interactive for users. At first, our intent was to utilize Twilio, by having an application where you called/texted in to obtain desired information. We iterated though our initial spiking process, resulting in a strong desire to create something that was more robust.
+When we begun to spike on ideas for where our project should head, we each came in with very different ideas. Our common ground being — we wanted to make something that felt both current while being interactive for users. At first, our intent was to utilize Twilio, by having an application where you called/texted in to obtain desired information. We iterated though our initial spiking process, resulting in a strong desire to create something that was more robust.
 
-###### Then, inspiration hit, we could create a trivia game, that pulled in an existing API.
+Then, inspiration hit, we could create a trivia game, that pulled in an existing API.
 
-###### Jeopardy (the beloved trivia game) has an API that we planned on using. However, as the project moved forward and we introduced new technologies, we ended up dropping the API strategy.
+Jeopardy (the beloved trivia game) has an API that we planned on using. However, as the project moved forward and we introduced new technologies, we ended up dropping the API strategy.
 
-###### Firebase was the newest technology we would stitch into our project.
+Firebase was the newest technology we would stitch into our project.
 
-###### The rest of the process, was coming up with an MVP and mapping out our UX goals.
+The rest of the process, was coming up with an MVP and mapping out our UX goals.
 
 #### Instructor Approved
 
@@ -24,10 +24,10 @@
 
 ##### Getting James on board with our idea:
 
-###### Our instructor, James, received our initial trivia application pitch (and ended up being our scrum-master). With much excitement and total encouragement, he gave us three web resources to look into before we came back on Monday morning to start working.
+Our instructor, James, received our initial trivia application pitch (and ended up being our scrum-master). With much excitement and total encouragement, he gave us three web resources to look into before we came back on Monday morning to start working.
 
-Polling/Sockets
-Firebase
+##### Polling/Sockets
+##### Firebase
 
 ## MVP
 
@@ -35,18 +35,18 @@ Firebase
 
 #### Defining the MVP:
 
-##### To allow a user to sign up for TriviaBase with just a simple username and password function, allowing the user to distinguish if they would be the primary admin for the game at play or simply a user competing against other members of TriviaBase. The game is populated with questions from a custom dataset, thus actualizing an experience, that can not be achieved from other trivia applications in the marketplace.
+To allow a user to sign up for TriviaBase with just a simple username and password function, allowing the user to distinguish if they would be the primary admin for the game at play or simply a user competing against other members of TriviaBase. The game is populated with questions from a custom dataset, thus actualizing an experience, that can not be achieved from other trivia applications in the marketplace.
 
 ## User stories for MVP:
 
-##### A user signs up, adds their friends and enjoys playing trivia with their friend(s).
-##### A user signs up, adds their friends and then gets value from using the trivia game to connect with friends.
-##### A user signs up, joins a new community of people and gets value from using the trivia game to connect with new people.
-##### A user signs up, joins a new community of people and gets value from using the trivia game to learn new facts.
-##### A user uses the app, opens it, and connects with friends. As they are playing, there is a chatroom function running – the chatroom updates every 10 messages in real time.
-##### A user uses the app, opens it, and connects with other users. As they are playing, they put down their phone/computer and walk away from the game – for over 30 seconds. The game iterates over their turn while no points are given but they continue to stay active in the game.
-##### A user uses the app, opens it, and connects with other users. As they are playing, they play a few rounds and need to stop playing the game. The user signs out of the game and can log back in when they desire.
-##### A user signs back into the app, maybe inviting some of their friends and continues to play the games.
+A user signs up, adds their friends and enjoys playing trivia with their friend(s).
+A user signs up, adds their friends and then gets value from using the trivia game to connect with friends.
+A user signs up, joins a new community of people and gets value from using the trivia game to connect with new people.
+A user signs up, joins a new community of people and gets value from using the trivia game to learn new facts.
+A user uses the app, opens it, and connects with friends. As they are playing, there is a chatroom function running – the chatroom updates every 10 messages in real time.
+A user uses the app, opens it, and connects with other users. As they are playing, they put down their phone/computer and walk away from the game – for over 30 seconds. The game iterates over their turn while no points are given but they continue to stay active in the game.
+A user uses the app, opens it, and connects with other users. As they are playing, they play a few rounds and need to stop playing the game. The user signs out of the game and can log back in when they desire.
+A user signs back into the app, maybe inviting some of their friends and continues to play the games.
 
 ## Github Repo:
 
@@ -92,7 +92,7 @@ Restructuring HTML to integrate better with the skeleton boilerplate.
 
 ## Problem Solving
 
-### Justifying our solutions to problems we encountered along the way.
+#### Justifying our solutions to problems we encountered along the way.
 
 ### Monday:
 
