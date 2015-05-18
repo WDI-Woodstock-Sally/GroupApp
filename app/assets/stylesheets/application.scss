@@ -20,11 +20,24 @@ body{
   background-attachment:fixed;
 }
 .mobile-nav{
-  background-color: rgb(0, 0, 9);
+  background-color: rgba(27, 42, 65, .95);
+  font-family: 'Cabin', sans-serif;
+  font-weight: 300;
+  font-size: 48px;
+  list-style-type: none;
   border-radius: 5px;
   padding: 15px 15px 15px 15px;
+}
+.title{
+  font-family: 'Pacifico', cursive;
+  font-color: rgba(76, 173, 85, 1);
+  float: right;
+  font-weight: 300;
+  font-size: 48px;
+  list-style-type: none;
 
 }
+
 /*-_-_-_-_-_-_-_- LEFT COLUM -_-_-_-_-_-_-_-*/
 h1{
   font-family: 'Cabin', sans-serif;
@@ -34,19 +47,19 @@ h1{
 }
 #question-h2{
   font-family: 'Vollkorn', serif;
-  font-weight: 300;
   list-style-type: none;
-  font-size:20px;
+  font-weight: 400;
+  font-size:30px;
   border-radius: 15px;
   padding: 15px 15px 15px 15px;
-  background-color: rgba(14, 230, 237, .40);
+  background-color: rgba(42, 43, 42, .35);
 }
 #timer{
   border: 2px rgba(73, 52, 81, .70) solid;
   border-radius: 100%;
   float:right;
   list-style-type: none;
-  background-color: rgba(75, 32, 196, .20);
+  background-color: rgba(244, 255, 248, .95);
   font-size: 20px;
   height: 2em;
   width: 2em;
@@ -54,7 +67,7 @@ h1{
   line-height: 2em;
 }
 .question-li{
-  background-color: rgba(14, 230, 237, .40);
+  background-color: rgba(128, 206, 215, .55);
   font-family: 'Vollkorn', serif;
   font-weight: 300;
   font-size: 20px;
@@ -67,67 +80,67 @@ h1{
   box-shadow: 0px 7px 161px 0px rgba(240, 100, 4, .70);
 }
 .question-pane{
-  background-color: rgba(42, 43, 42, .50);
+  background-color: rgba(244, 255, 248, .25);
   list-style-type: none;
   font-family: 'Vollkorn', serif;
-  font-weight: 300;
-  font-size:20px;
+  font-weight: 500;
+  font-size:40px;
   border-radius: 15px;
   padding: 15px 15px 15px 15px;
 }
 .chat-pane{
-  background-color: rgba(42, 43, 42, .50);
+  background-color: rgba(244, 255, 248, .25);
   list-style-type: none;
   border-radius: 20px;
   padding: 15px 15px 15px 15px;
 }
 .chat-inner-container{
-  font-family: 'Vollkorn', serif;
-  background-color: rgba(14, 230, 237, .40);
   list-style-type: none;
-  font-weight: 300;
-  font-size:20px;
+  font-family: 'Vollkorn', serif;
+  background-color: rgba(128, 206, 215, .55);
+  font-weight: 400;
+  font-size:16px;
   border-radius: 15px;
   padding: 15px 15px 15px 15px;
 }
 #scoreboard{
   font-family: 'Vollkorn', serif;
-  background-color: rgba(14, 230, 237, .40);
+  background-color: rgba(42, 43, 42, .35);
   list-style-type: none;
   font-weight: 300;
-  font-size:20px;
+  font-size:22px;
   border-radius: 15px;
   padding: 15px 15px 15px 15px;
 }
 #submit-answer{
-  background-color: rgba(75, 32, 196, .20);
+  background-color: rgba(244, 255, 248, .95);
   list-style-type: none;
 }
 .answer-right{
-  background-color: green;
+  background-color: rgba(126, 56, 68, .85);
 }
 .answer-wrong{
-  background-color: red;
+  background-color: rgba(128, 44, 62, .85);
 }
 .answer-selected{
-  background-color: lightblue;
+  background-color: rgba(114, 114, 171, .95);
 }
 #admin-container{
   font-family: 'Vollkorn', serif;
-  background-color: rgba(75, 32, 196, .20);
+  background-color: rgba(42, 43, 42, .35);
   font-weight: 300;
   font-size: 20px;
   border-radius: 15px;
   padding: 15px 15px 15px 15px;
 }
 .footer{
-  background-color: rgb(0, 0, 9);
+  background-color: rgba(27, 42, 65, 1);
   border-radius: 5px;
   padding: 15px 15px 15px 15px;
 }
 /*-_-_-_-_-_-_-_- SIGN IN -_-_-_-_-_-_-_-*/
 .log-nav{
-  background-color: rgba(42, 43, 42, .50);
+  background-color: rgba(114, 114, 171, .95);
   list-style-type: none;
   font-family: 'Vollkorn', serif;
   font-weight: 300;
