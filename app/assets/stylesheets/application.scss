@@ -28,6 +28,18 @@ body{
   border-radius: 5px;
   padding: 15px 15px 15px 15px;
 }
+li{
+  list-style-type: none;
+}
+.title{
+  font-family: 'Pacifico', cursive;
+  font-color: rgba(76, 173, 85, 1);
+  float: right;
+  font-weight: 300;
+  font-size: 48px;
+  list-style-type: none;
+
+}
 
 /*-_-_-_-_-_-_-_- LEFT COLUM -_-_-_-_-_-_-_-*/
 h1{
@@ -90,6 +102,7 @@ li.player-score{
   list-style-type: none;
   border-radius: 20px;
   padding: 15px 15px 15px 15px;
+  overflow: scroll;
 }
 .chat-inner-container{
   list-style-type: none;
@@ -99,6 +112,7 @@ li.player-score{
   font-size:16px;
   border-radius: 15px;
   padding: 15px 15px 15px 15px;
+  overflow: scroll;
 }
 #example-message{
   font-family: 'Vollkorn', serif;
