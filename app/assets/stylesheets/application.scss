@@ -20,7 +20,7 @@ body{
   background-attachment:fixed;
 }
 .mobile-nav{
-  background-color: rgba(27, 42, 65, .95);
+  background-color: rgba(15, 244, 198, .45);
   font-family: 'Cabin', sans-serif;
   font-weight: 300;
   font-size: 48px;
@@ -55,14 +55,14 @@ h1{
   font-size:30px;
   border-radius: 15px;
   padding: 15px 15px 15px 15px;
-  background-color: rgba(42, 43, 42, .35);
+  background-color: rgba(42, 43, 42, .55);
 }
 #timer{
-  border: 2px rgba(73, 52, 81, .70) solid;
+  border: 2px rgba(73, 52, 81, .30) solid;
   border-radius: 100%;
   float:right;
   list-style-type: none;
-  background-color: rgba(244, 255, 248, .95);
+  background-color: rgba(15, 244, 198, .45);
   font-size: 20px;
   height: 2em;
   width: 2em;
@@ -70,7 +70,7 @@ h1{
   line-height: 2em;
 }
 .question-li{
-  background-color: rgba(128, 206, 215, .55);
+  background-color: rgba(128, 206, 215, .75);
   font-family: 'Vollkorn', serif;
   font-weight: 300;
   font-size: 20px;
@@ -83,7 +83,7 @@ h1{
   box-shadow: 0px 7px 161px 0px rgba(240, 100, 4, .70);
 }
 .question-pane{
-  background-color: rgba(244, 255, 248, .25);
+  background-color: rgba(244, 255, 248, .45);
   list-style-type: none;
   font-family: 'Vollkorn', serif;
   font-weight: 500;
@@ -91,8 +91,14 @@ h1{
   border-radius: 15px;
   padding: 15px 15px 15px 15px;
 }
+h2{
+  color: rgba(244, 255, 248, 1);
+}
+li.player-score{
+  color: rgba(244, 255, 248, 1);
+}
 .chat-pane{
-  background-color: rgba(244, 255, 248, .25);
+  background-color: rgba(244, 255, 248, .45);
   list-style-type: none;
   border-radius: 20px;
   padding: 15px 15px 15px 15px;
@@ -101,16 +107,19 @@ h1{
 .chat-inner-container{
   list-style-type: none;
   font-family: 'Vollkorn', serif;
-  background-color: rgba(128, 206, 215, .55);
+  background-color: rgba(128, 206, 215, .75);
   font-weight: 400;
   font-size:16px;
   border-radius: 15px;
   padding: 15px 15px 15px 15px;
   overflow: scroll;
 }
+#example-message{
+  font-family: 'Vollkorn', serif;
+}
 #scoreboard{
   font-family: 'Vollkorn', serif;
-  background-color: rgba(42, 43, 42, .35);
+  background-color: rgba(42, 43, 42, .55);
   list-style-type: none;
   font-weight: 300;
   font-size:22px;
@@ -122,25 +131,24 @@ h1{
   list-style-type: none;
 }
 .answer-right{
-  background-color: green;
-  //background-color: rgba(126, 56, 68, .85);
+  background-color: rgba(4, 232, 36, .75);
 }
 .answer-wrong{
-  background-color: rgba(128, 44, 62, .85);
+  background-color: rgba(126, 56, 68, .85);
 }
 .answer-selected{
   background-color: rgba(114, 114, 171, .95);
 }
 #admin-container{
   font-family: 'Vollkorn', serif;
-  background-color: rgba(42, 43, 42, .35);
+  background-color: rgba(42, 43, 42, .55);
   font-weight: 300;
   font-size: 20px;
   border-radius: 15px;
   padding: 15px 15px 15px 15px;
 }
 .footer{
-  background-color: rgba(27, 42, 65, 1);
+  background-color: rgba(15, 244, 198, .45);
   border-radius: 5px;
   padding: 15px 15px 15px 15px;
 }
