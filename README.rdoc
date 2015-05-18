@@ -177,15 +177,14 @@ File organization/refactoring
 
 Resources
 
-[I'm an inline-style link](https://css-tricks.com)
-[I'm an inline-style link](http://sass-lang.com/guide)
-[I'm an inline-style link](http://stackoverflow.com)
-[I'm an inline-style link](https://www.firebase.com/docs)
-[I'm an inline-style link](https://developer.mozilla.org/en-US/docs/WebSockets)
-[I'm an inline-style link](https://developer.mozilla.org/en-US/docs/Web/API/Node/contains)
-[I'm an inline-style link](https://developer.mozilla.org/en-US/docs/Web/Guide/API/WebRTC/WebRTC_basics)
-[I'm an inline-style link](http://responsivedesign.is/resources/frameworks/skeleton)
-
+| (https://css-tricks.com) |
+| (http://sass-lang.com/guide) |
+| (http://stackoverflow.com) |
+| (https://www.firebase.com/docs) |
+| (https://developer.mozilla.org/en-US/docs/WebSockets) |
+| (https://developer.mozilla.org/en-US/docs/Web/API/Node/contains) |
+| (https://developer.mozilla.org/en-US/docs/Web/Guide/API/WebRTC/WebRTC_basics) |
+| (http://responsivedesign.is/resources/frameworks/skeleton) |
 
 The Team
 
