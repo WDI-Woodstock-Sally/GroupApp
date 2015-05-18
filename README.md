@@ -143,22 +143,22 @@ Adding more questions to firebase and feeling good about the theme the applicati
 ## Tech-Required
 ### Complete
 
-#### Rails for back-end - | Complete |
+Rails for back-end - | Complete |
 
-#### Project must include authentication - | Complete |
+Project must include authentication - | Complete |
 
-#### Project must include the use of an external API and/or an existing dataset - | Approved - based on use of Firebase |
+Project must include the use of an external API and/or an existing dataset - | Approved - based on use of Firebase |
 
-#### Create at least two JSON API route - | Complete |
+Create at least two JSON API route - | Complete |
 
-#### Additional Tech/Resources Introduced
+Additional Tech/Resources Introduced
 Not required but implemented into the project
 
-#### Firebase - | Complete |
+Firebase - | Complete |
 
-#### Skeleton - | Complete |
+Skeleton - | Complete |
 
-#### A custom dataset hosted on Firebase - | Complete |
+A custom dataset hosted on Firebase - | Complete |
 
 ### Scaleable Features
 
