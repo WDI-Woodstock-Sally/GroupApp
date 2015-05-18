@@ -4,19 +4,18 @@
 
 ### Timeline
 
-Spiking
-Instructor Approved
-MVP
-Blockers
-Problem Solving
-Wins
-Tech-Required
-Additional Tech/Resources Introduced
-Scaleable Features
-Outstanding Blockers
-Resources
-The Team
-
+###### Spiking
+###### Instructor Approved
+###### MVP
+###### Blockers
+###### Problem Solving
+###### Wins
+###### Tech-Required
+###### Additional Tech/Resources Introduced
+###### Scaleable Features
+###### Outstanding Blockers
+###### Resources
+###### The Team
 
 ## Timeline
 
