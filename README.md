@@ -71,16 +71,13 @@ https://github.com/WDI-Woodstock-Sally/Trivia-App
 
 ## Entity Relationship Diagram:
 
-
-
-
-
+![Figure 1-1](http://i.imgur.com/EtAxxwY.png "Figure 1-1")
 
 
 ## Several Wireframes:
 
+![Figure 1-2](http://i.imgur.com/GPpNuoQ.jpg "Figure 1-2")
 
- 
 ## Blockers
 
 ### First:
@@ -207,6 +204,6 @@ File organization/refactoring
 
 ## The Team
 
-Nickolas Selesky
-Charlie Powell
-Dakoda Wogan
+Nickolas Selesky | https://github.com/nselesky |
+Charlie Powell | https://github.com/CharlesPowell |
+Dakoda Wogan | https://github.com/ddakoda |
