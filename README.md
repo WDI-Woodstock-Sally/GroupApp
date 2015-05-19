@@ -204,6 +204,6 @@ Not required but implemented into the project
 
 ## The Team
 
-[Nickolas Selesky](https://github.com/nselesky)
-[Charlie Powell](https://github.com/CharlesPowell)
-[Dakoda Wogan](https://github.com/ddakoda)
+- [Nickolas Selesky](https://github.com/nselesky)
+- [Charlie Powell](https://github.com/CharlesPowell)
+- [Dakoda Wogan](https://github.com/ddakoda)
