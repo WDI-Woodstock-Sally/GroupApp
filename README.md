@@ -157,50 +157,50 @@ Adding more questions to firebase and feeling good about the theme the applicati
 ## Tech-Required
 ### Complete
 
-Rails for back-end - | Complete |
+- Rails for back-end - | Complete |
 
-Project must include authentication - | Complete |
+- Project must include authentication - | Complete |
 
-Project must include the use of an external API and/or an existing dataset - | Approved - based on use of Firebase |
+- Project must include the use of an external API and/or an existing dataset - | Approved - based on use of Firebase |
 
-Create at least two JSON API route - | Complete |
+- Create at least two JSON API route - | Complete |
 
-Additional Tech/Resources Introduced
+- Additional Tech/Resources Introduced
 Not required but implemented into the project
 
-Firebase - | Complete |
+- Firebase - | Complete |
 
-Skeleton - | Complete |
+- Skeleton - | Complete |
 
-A custom dataset hosted on Firebase - | Complete |
+- A custom dataset hosted on Firebase - | Complete |
 
 ### Scaleable Features
 
-Have the game runs itself
-The admin feature will not be needed for a game to run
-The game will stop playing once all users are off the site
-More than one game played on the host
-Playing without a login
-Disabling the chat feature
+- Have the game runs itself
+- The admin feature will not be needed for a game to run
+- The game will stop playing once all users are off the site
+- More than one game played on the host
+- Playing without a login
+- Disabling the chat feature
 
 ### Outstanding Blockers
 
-More than one game played on the host
-Playing without a login
-All the pages are running application.js
-File organization/refactoring
+- More than one game played on the host
+- Playing without a login
+- All the pages are running application.js
+- File organization/refactoring
 
 
 ## Resources
 
-| https://css-tricks.com |
-| http://sass-lang.com/guide |
-| http://stackoverflow.com |
-| https://www.firebase.com/docs |
-| https://developer.mozilla.org/en-US/docs/WebSockets |
-| https://developer.mozilla.org/en-US/docs/Web/API/Node/contains |
-| https://developer.mozilla.org/en-US/docs/Web/Guide/API/WebRTC/WebRTC_basics |
-| http://responsivedesign.is/resources/frameworks/skeleton |
+- | https://css-tricks.com |
+- | http://sass-lang.com/guide |
+- | http://stackoverflow.com |
+- | https://www.firebase.com/docs |
+- | https://developer.mozilla.org/en-US/docs/WebSockets |
+- | https://developer.mozilla.org/en-US/docs/Web/API/Node/contains |
+- | https://developer.mozilla.org/en-US/docs/Web/Guide/API/WebRTC/WebRTC_basics |
+- | http://responsivedesign.is/resources/frameworks/skeleton |
 
 ## The Team
 
