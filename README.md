@@ -56,14 +56,14 @@ To allow a user to sign up for TriviaBase with just a simple username and passwo
 
 ## User stories for MVP:
 
-A user signs up, adds their friends and enjoys playing trivia with their friend(s).
-A user signs up, adds their friends and then gets value from using the trivia game to connect with friends.
-A user signs up, joins a new community of people and gets value from using the trivia game to connect with new people.
-A user signs up, joins a new community of people and gets value from using the trivia game to learn new facts.
-A user uses the app, opens it, and connects with friends. As they are playing, there is a chatroom function running – the chatroom updates every 10 messages in real time.
-A user uses the app, opens it, and connects with other users. As they are playing, they put down their phone/computer and walk away from the game – for over 30 seconds. The game iterates over their turn while no points are given but they continue to stay active in the game.
-A user uses the app, opens it, and connects with other users. As they are playing, they play a few rounds and need to stop playing the game. The user signs out of the game and can log back in when they desire.
-A user signs back into the app, maybe inviting some of their friends and continues to play the games.
+- A user signs up, adds their friends and enjoys playing trivia with their friend(s).
+- A user signs up, adds their friends and then gets value from using the trivia game to connect with friends.
+- A user signs up, joins a new community of people and gets value from using the trivia game to connect with new people.
+- A user signs up, joins a new community of people and gets value from using the trivia game to learn new facts.
+- A user uses the app, opens it, and connects with friends. As they are playing, there is a chatroom function running – the chatroom updates every 10 messages in real time.
+- A user uses the app, opens it, and connects with other users. As they are playing, they put down their phone/computer and walk away from the game – for over 30 seconds. The game iterates over their turn while no points are given but they continue to stay active in the game.
+- A user uses the app, opens it, and connects with other users. As they are playing, they play a few rounds and need to stop playing the game. The user signs out of the game and can log back in when they desire.
+- A user signs back into the app, maybe inviting some of their friends and continues to play the games.
 
 ## Github Repo:
 
