@@ -23,12 +23,12 @@
 </head>
 <body>
 
-  <div id="wrapper">
+  <div id="wrapper" class="container-liquid">
 
 
     <div class="nav-top row">
       <!-- Hamburger Nav -->
-      <div class="mobile-nav twelve columns">
+      <div class="mobile-nav">
            <div class="menu-btn" id="menu-btn">
       	<div>TriviaBase</div>
         <div class="title">
@@ -38,8 +38,8 @@
       	<span></span>
       	<span></span>
            </div>
-
-           <div class="responsive-menu">
+           
+           <div class="row responsive-menu">
               <ul>
                 <li>
                   <%= form_tag('/profile', method: :get) do %>
@@ -53,12 +53,9 @@
                  </li>
               </ul>
            </div>
-
       </div>
-      <!-- <div class="mobile-nav three columns"></div> -->
       <!-- END Hamburger Nav -->
     </div>
-
 
 
 
@@ -124,8 +121,7 @@
 
     </div>
     <div class="footer">
-      <div class="goodbye">
-      <li>TriviaBase</li>
+
     </span>
   </div>
 

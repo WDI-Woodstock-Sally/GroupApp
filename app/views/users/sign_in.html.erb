@@ -1,12 +1,23 @@
-<h3>Sign In!</h3>
+<div class="container-liquid">
+  <div class="content row">
+    <h1 class="banner tweleve columns">Welcome to TriviaBase!</h1>
+    <h3 class="bannerCaption ten columns offset-by-one">A simple trivia app to play anywhere with anyone.</h3>
+  </div>
 
-<%= form_tag('/log_in', method: :post) do %>
-  <%= label_tag :username %>
-  <%= text_field_tag :username %>
-  <%= label_tag :password %>
-  <%= password_field_tag :password %>
-  <%= submit_tag "Sign In"%>
-<% end %>
-<%= form_tag('/users/new', method: :get ) do %>
-  <%= submit_tag "Sign up to Play", :id => 'sign_upBtn' %>
-<% end %>
+  <h4 class="loginTitle">Sign In to Play!</h4>
+  <div class="row loginForm">
+    <div class="four columns offset-by-four">
+      <%= form_tag('/log_in', method: :post) do %>
+        <%= label_tag :username %>
+        <%= text_field_tag :username %>
+        <%= label_tag :password %>
+        <%= password_field_tag :password %>
+        <%= submit_tag "Sign In", :id => 'loginBtn'%>
+        <% end %>
+        <%= form_tag('/users/new', method: :get ) do %>
+        <%= submit_tag "Sign up to Play", :id => 'sign_upBtn' %>
+        <% end %>
+    </div>
+  </div>
+
+</div>

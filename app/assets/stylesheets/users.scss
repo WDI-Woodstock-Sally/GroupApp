@@ -3,13 +3,40 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-
-
+.banner{
+  font-size: 4.6rem;
+  color: #79909C;
+  font-weight: 200;
+}
+.bannerCaption{
+  font-family: 'Cabin', sans-serif;
+  text-align: center;
+  font-size: 2.6rem;
+  color: #79909C;
+  font-weight: 200;
+}
+.loginTitle{
+  font-family: 'Cabin', sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  color: #79909C;
+  font-weight: 200;
+}
+.loginForm{
+  color: #79909C;
+}
   #wrapper{
     height:700px;
     width:100%;
   }
   #sign_upBtn{
+    color: black;
+    margin: 0px auto;
+    width: 172px;
+    background-color: rgba(211, 211, 211, 0.35);
+  }
+  #loginBtn{
+    color: black;
     margin: 0px auto;
     width: 172px;
     background-color: rgba(211, 211, 211, 0.35);
