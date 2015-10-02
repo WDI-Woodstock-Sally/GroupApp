@@ -18,8 +18,8 @@
 var app = app || {};
 var active = active || {};
 
-//function checkAnswer()
 
+/*          setInterval with a counter              */
 function setIntervalX(callback, delay, repetitions) {
     var x = 0;
     var intervalID = window.setInterval(function () {
@@ -31,6 +31,8 @@ function setIntervalX(callback, delay, repetitions) {
        }
     }, delay);
 }
+
+
 
 
 $(document).ready(function(evt){
@@ -45,27 +47,30 @@ $(document).ready(function(evt){
   var nameField = $('#nameInput');
   var messageList = $('#example-messages');
 
-  app.ActivePlayerModel = Backbone.Firebase.Model.extend({
 
+  /*        ActivePlayer(Scoreboard) Backbone Model
+  app.ActivePlayerModel = Backbone.Firebase.Model.extend({
     defaults: {
       username: nameField.val(),
       score: 10
     }
-
   });
+
+  /*        ActivePlayer(Scoreboard) Backbone Collection          */
   app.ActivePlayerCollection = Backbone.Firebase.Collection.extend({
     model: app.ActivePlayerModel,
     url: "https://triviabase.firebaseio.com/activeplayers"
   });
 
+  /*        ActivePlayer(Scoreboard) Backbone View          */
   app.ActivePlayerView = Backbone.View.extend({
     initialize: function(){
       this.listenTo(this.model,'change', this.render);
       this.listenTo(this.model,'delete', this.remove);
     },
-    //__Time Left = <%= timeLeft%>
-    //__Created = <%= created%>
-    template: _.template('<%= username %>:<%= score %>'),
+                          //__Time Left = <%= timeLeft%>
+                          //__Created = <%= created%>
+    template: _.template("<%= username %>'\t'<%= score %>"),
     tagName: 'li',
     className: 'player-score',
     render: function(){
@@ -75,13 +80,15 @@ $(document).ready(function(evt){
     }
   });
 
+
+  /*          ActivePlayer(Scoreboard) Backbone Collection View          */
   app.ActivePlayerListView = Backbone.View.extend({
   initialize: function(options){
     this.modelView = options.modelView;
     this.listenTo(this.collection,'sync', this.render);
   },
   render: function(){
-    console.log("render scores")
+    //console.log("render scores")
     var models = this.collection.models;
     this.$el.empty();
     for (var i = 0; i < models.length; i++) {
@@ -133,7 +140,7 @@ $(document).ready(function(evt){
 
   active.startTimer = function(seconds){
     var tempTime = active.seconds;
-    console.log(tempTime)
+    //console.log(tempTime)
     setIntervalX(function(){
       tempTime --;
       $("#timer").text(tempTime.toString());
@@ -173,7 +180,7 @@ $(document).ready(function(evt){
           user[0].save({score: tempscore});
         }
         else{
-          console.log('user does not exit')
+          //console.log('user does not exit')
           var tempname = nameField.val();
           app.activePlayers.add({
             username: tempname,
