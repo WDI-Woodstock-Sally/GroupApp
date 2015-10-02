@@ -1,0 +1,166 @@
+/*
+  * This is a manifest file that'll be compiled into application.css, which will include  all the files
+  * listed below.
+  *
+  * Any CSS and SCSS file within this directory, lib/assets/stylesheets,  vendor/assets/stylesheets,
+  * or any plugin's vendor/assets/stylesheets directory can be referenced here using a  relative path.
+  *
+  * You're free to add application-wide styles to this file and they'll appear at the   bottom of the
+  * compiled file so the styles you add here take precedence over styles defined in any   styles
+  * defined in the other CSS/SCSS files in this directory. It is generally better to  create a new
+  * file per style scope.
+  *
+  *= require_tree .
+  *= require_self
+  */
+
+body{
+  background-image: url('http://i.imgur.com/ewZ5zC0.jpg');
+  background-size: cover;
+  background-attachment:fixed;
+}
+.mobile-nav{
+  background-color: rgba(15, 244, 198, .45);
+  font-family: 'Cabin', sans-serif;
+  font-weight: 300;
+  font-size: 48px;
+  list-style-type: none;
+  border-radius: 5px;
+  padding: 15px 15px 15px 15px;
+}
+li{
+  list-style-type: none;
+}
+.title{
+  font-family: 'Pacifico', cursive;
+  font-color: rgba(76, 173, 85, 1);
+  float: right;
+  font-weight: 300;
+  font-size: 48px;
+  list-style-type: none;
+
+}
+h3{
+  font-family: Pacifico; 
+}
+/*-_-_-_-_-_-_-_- LEFT COLUM -_-_-_-_-_-_-_-*/
+h1{
+  font-family: 'Cabin', sans-serif;
+  font-weight:300;
+  font-size:12px;
+  text-align:center;
+}
+#question-h2{
+  font-family: 'Vollkorn', serif;
+  list-style-type: none;
+  font-weight: 400;
+  font-size:30px;
+  border-radius: 15px;
+  padding: 15px 15px 15px 15px;
+  background-color: rgba(42, 43, 42, .55);
+}
+#timer{
+  border: 2px rgba(73, 52, 81, .30) solid;
+  border-radius: 100%;
+  float:right;
+  list-style-type: none;
+  background-color: rgba(15, 244, 198, .45);
+  font-size: 20px;
+  height: 2em;
+  width: 2em;
+  text-align: center;
+  line-height: 2em;
+}
+.question-li{
+  background-color: rgba(128, 206, 215, .75);
+  font-family: 'Vollkorn', serif;
+  font-weight: 300;
+  font-size: 20px;
+  list-style-type: none;
+  border: 2px rgba(73, 52, 81, .70) solid;
+  margin-top: 10px;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 7px 161px 0px rgba(240, 100, 4, .70);
+  -moz-box-shadow: 0px 7px 161px 0px rgba(240, 100, 4, .70);
+  box-shadow: 0px 7px 161px 0px rgba(240, 100, 4, .70);
+}
+.question-pane{
+  background-color: rgba(244, 255, 248, .45);
+  list-style-type: none;
+  font-family: 'Vollkorn', serif;
+  font-weight: 500;
+  font-size:40px;
+  border-radius: 15px;
+  padding: 15px 15px 15px 15px;
+}
+h2{
+  color: rgba(244, 255, 248, 1);
+}
+li.player-score{
+  color: rgba(244, 255, 248, 1);
+}
+.chat-pane{
+  background-color: rgba(244, 255, 248, .45);
+  list-style-type: none;
+  border-radius: 20px;
+  padding: 15px 15px 15px 15px;
+  overflow: scroll;
+}
+.chat-inner-container{
+  list-style-type: none;
+  font-family: 'Vollkorn', serif;
+  background-color: rgba(128, 206, 215, .75);
+  font-weight: 400;
+  font-size:16px;
+  border-radius: 15px;
+  padding: 15px 15px 15px 15px;
+  overflow: scroll;
+}
+#example-message{
+  font-family: 'Vollkorn', serif;
+}
+#scoreboard{
+  font-family: 'Vollkorn', serif;
+  background-color: rgba(42, 43, 42, .55);
+  list-style-type: none;
+  font-weight: 300;
+  font-size:22px;
+  border-radius: 15px;
+  padding: 15px 15px 15px 15px;
+}
+#submit-answer{
+  background-color: rgba(244, 255, 248, .95);
+  list-style-type: none;
+}
+.answer-right{
+  background-color: rgba(4, 232, 36, .75);
+}
+.answer-wrong{
+  background-color: rgba(126, 56, 68, .85);
+}
+.answer-selected{
+  background-color: rgba(114, 114, 171, .95);
+}
+#admin-container{
+  font-family: 'Vollkorn', serif;
+  background-color: rgba(42, 43, 42, .55);
+  font-weight: 300;
+  font-size: 20px;
+  border-radius: 15px;
+  padding: 15px 15px 15px 15px;
+}
+.footer{
+  background-color: rgba(15, 244, 198, .45);
+  border-radius: 5px;
+  padding: 15px 15px 15px 15px;
+}
+/*-_-_-_-_-_-_-_- SIGN IN -_-_-_-_-_-_-_-*/
+.log-nav{
+  background-color: rgba(114, 114, 171, .95);
+  list-style-type: none;
+  font-family: 'Vollkorn', serif;
+  font-weight: 300;
+  font-size:20px;
+  border-radius: 15px;
+  padding: 15px 15px 15px 15px;
+}
