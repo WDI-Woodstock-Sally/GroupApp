@@ -1,2 +1,0 @@
-# GroupApp
-Git_Practice
