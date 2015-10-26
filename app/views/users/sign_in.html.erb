@@ -4,19 +4,39 @@
     <h3 class="bannerCaption ten columns offset-by-one">A simple trivia app to play anywhere with anyone.</h3>
   </div>
 
-  <h4 class="loginTitle">Sign In to Play!</h4>
+
   <div class="row loginForm">
-    <div class="four columns offset-by-four">
-      <%= form_tag('/log_in', method: :post) do %>
-        <%= label_tag :username %>
-        <%= text_field_tag :username %>
-        <%= label_tag :password %>
-        <%= password_field_tag :password %>
-        <%= submit_tag "Sign In", :id => 'loginBtn'%>
-        <% end %>
-        <%= form_tag('/users/new', method: :get ) do %>
-        <%= submit_tag "Sign up to Play", :id => 'sign_upBtn' %>
-        <% end %>
+
+    <div class="app summary eight columns">
+      <h3>TrivaBase</h3>
+      <p>
+        A fun and easy way to enjoy bar trivia anytime. Instead of planning your schedule around your favorite bars triva night, you can now start triva with anyone, anywhere. Play the game at your favorite bar, at a party. Couldn't make it out? Don't worry you can still enjoy the fun from any location by using the chat window to still be a part of the game!
+      </p>
+      <p>
+        Set your teams, make sure one divice per team is signed into TrivaBase, next the user with admin permissions should customize the game settings, last the admin user will start the game when ready!
+      </p>
+      <p>
+        * * Since this is only Version 1 the admin user should use the username: admin, and password: Triviab4s3$
+      </p>
+    </div>
+    <div class="four columns">
+      <div class="row">
+      <h4 class="loginTitle tweleve columns">Sign In to Play!</h4>
+      </div>
+      <div class="row">
+        <div class="logInForm six columns offset-by-three">
+          <%= form_tag('/log_in', method: :post) do %>
+          <%= label_tag :username %>
+          <%= text_field_tag :username %>
+          <%= label_tag :password %>
+          <%= password_field_tag :password %>
+          <%= submit_tag "Sign In", :id => 'loginBtn'%>
+          <% end %>
+          <%= form_tag('/users/new', method: :get ) do %>
+          <%= submit_tag "Sign up to Play", :id => 'sign_upBtn' %>
+          <% end %>
+        </div>
+      </div>
     </div>
   </div>
 
